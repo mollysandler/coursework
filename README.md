@@ -1,5 +1,5 @@
 # Molly Sandler Coursework
-<b> My coursework from my time at Cal Poly as of June 2024 <b> <br>
+<b> My coursework from my time at Cal Poly as of June 2024 </b> <br>
 While many college students work on personal projects, one of the great things about Cal Poly is its Learn By Doing mentality. While I work on both personal and professional projects too, I have had the wonderful opportunity to work in depth in all of my classes, learning a variety of languages and how to work well in teams. <br>
 
 101 is an Intro to Computer Science course, all in Python <br>
