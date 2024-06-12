@@ -1,0 +1,16 @@
+365_RelationalDatabases_Potionshop/.env
+365_RelationalDatabases_Potionshop/.venv
+365_RelationalDatabases_OpenRecipes/.venv
+365_RelationalDatabases_OpenRecipes/.env
+365_RelationalDatabases_OpenRecipes/.pytest_cache
+
+365_RelationalDatabases_OpenRecipes/backend/.pytest_cache
+365_RelationalDatabases_OpenRecipes/backend/venv
+
+365_RelationalDatabases_OpenRecipes/frontend/.expo
+365_RelationalDatabases_OpenRecipes/frontend/node_modules
+
+
+309_SoftwareEngineering2/csc309project/.aws
+309_SoftwareEngineering2/csc309project/.github
+309_SoftwareEngineering2/csc309project/keys

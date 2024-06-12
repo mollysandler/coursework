@@ -1,0 +1,137 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Oct 20 22:14:39 2021
+
+@author: mollysandler
+"""
+import sys    
+import calsess
+
+def error():
+    print('Sorry we cannot help you here')
+    sys.exit
+    
+class Order:
+    def __init__(self, ctype, milk, size, price):
+        self.ctype = ctype
+        self.milk = milk
+        self.size = size
+        self.price = price
+    
+    
+def getMilk():
+    
+    '''asks for users coffee type'''    
+    ctype = str(input("Which coffee would you like? "))
+    
+    if ctype.lower() == "black" or ctype == "iced black":
+        milk= str(input("Would you like milk with that? "))
+        if milk.lower() == "y" or milk == "n":
+            print ("Great, thank you")
+            m = milk 
+        elif milk.lower() != "y" and milk != "n":
+            print ("Sorry! Invalid input, try again")
+            milk = str(input("Would you like milk with that? "))
+            if milk.lower() != "Y" and milk != "N":
+                print ("Sorry! Invalid input, try again")
+                milk = str(input("Would you like milk with that? "))
+                if milk.lower() != "y" and milk != "n":
+                    error()
+    return Order(null, milk, null, null)
+    
+
+
+elif ctype.lower() == "latte" or ctype == "iced latte":
+    print ("Great, thank you")
+elif ctype.lower() != "latte" and ctype.lower() != "iced latte" and ctype.lower() != "black" and ctype.lower() != "iced black":
+    print ("Sorry! Invalid Input, try again")
+    ctype = str(input("Which coffee would you like? "))
+    if ctype.lower() != "latte" and ctype.lower() != "iced latte" and ctype.lower() != "black" and ctype.lower() != "iced black":
+        print ("Sorry! Invalid Input, try again")
+        ctype = str(input("Which coffee would you like? "))
+        if ctype.lower() != "latte" and ctype.lower() != "iced latte" and ctype.lower() != "black" and ctype.lower() != "iced black":
+             exit (ctype)
+                           
+            
+size = str(input("What size would you like that in? ")) 
+
+if size.lower() == "short" or size.lower() == "regular" or size.lower() == "large":
+    print ("Great, thank you")
+elif size != "Short" and size != "Regular" and size != "Large":
+        print ("Sorry! Invalid Input, try again")
+        size = str(input("What size would you like that in? "))
+        if size.lower() != "short" and size.lower() != "regular" and size.lower() != "large":
+            print ("Sorry! Invalid Input, try again")
+            size = str(input("What size would you like that in? "))
+            if size.lower() != "short" and size.lower() != "regular" and size.lower() != "large":
+                error()           
+
+if ctype.lower() == "black":
+    if size.lower() == "short":
+        if milk.lower() == "y":
+            p = "1.30"
+        elif milk.lower() == "n":
+            p = "1.25"
+    elif size.lower() == "regular":
+        if milk == "Y":
+            p = "1.60"
+        elif milk.lower() == "n":
+            p = "1.50"
+    elif size == "Large":
+        if milk == "Y":
+            p = "1.95"
+        elif milk == "N":
+            p = "1.75"
+elif ctype == "Iced Black":
+    if size == "Short":
+        if milk == "Y":
+            p = "1.45"
+        elif milk == "N":
+            p = "1.40"
+    elif size == "Regular":
+        if milk == "Y":
+            p = "2.00"
+        elif milk == "N":
+            p = "1.90"
+    elif size == "Large":
+        if milk == "Y":
+            p = "2.60"
+        elif milk == "N":
+            p = "2.40"
+elif ctype == "Latte":
+    if size == "Short":
+        p = "2.00"
+    elif size == "Regualar":
+        p = "2.50"
+    elif size == "Large":
+        p = "3.00"
+elif ctype == "Iced Latte":
+    if size == "Short":
+        p = "2.20"
+    elif size == "Regular":
+        p = "2.70"
+    elif size == "Large":
+        p = "3.20"
+
+        
+
+        
+        
+    
+def Calculate_Price():
+    x= (ctype)
+    y= (size)
+    z= (milk)
+    Price = (x + y + z)
+    return Price
+           
+
+print ("Coffee type: " , ctype)
+print ("Coffee size: " , size)
+if ctype == "Latte" or ctype == "Iced Latte":
+    print ("Milk added: N" )
+    print ("Price: " , "$" , p)
+elif ctype == "Black" or ctype == "ced Black": 
+    print ("Milk added: " , milk)
+    print ("Price: " , "$", p)

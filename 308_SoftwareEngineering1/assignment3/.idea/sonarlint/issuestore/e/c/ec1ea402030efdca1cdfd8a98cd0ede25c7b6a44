@@ -1,0 +1,7 @@
+
+t	java:S127"XRefactor the code in order to not assign to this loop counter from within the loop body.(ı£ùî8¥·¸èŞ1
+{	java:S116"_Rename this field "MAX_NUMBER_OF_VALUES" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éİêÚ8î¸¸èŞ1
+r	java:S116"VRename this field "PANEL_WIDTH" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷Œßğ8î¸¸èŞ1
+s	java:S116"WRename this field "PANEL_HEIGHT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(óŒÅ­8ñ¸¸èŞ1
+>
+java:S1170"!Make this final field static too.(éİêÚ8ú¸¸èŞ1

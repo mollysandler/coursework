@@ -1,0 +1,237 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Oct 27 12:57:04 2021
+
+@author: mollysandler
+"""
+
+import sys
+
+class employee:
+    
+    def __init__ (self, name, age, rankID):
+    
+        self.name = name
+        self.age = age
+        self.rankID = rankID
+        
+    def  __repr__(self):
+        return ("Name: " + str(self.name)+ ", Age: " + str(self.age) + ", RankID: " + str(self.rankID))
+    
+    def __eq__(self, other):
+        return (self.rankID == other.rankID)
+    
+employee1 = employee("Michael" , 45 , 12345)
+print(employee1)
+
+employee2 = employee("Dwight", 40 , 23456)
+print(employee2)
+
+employee3 = employee("Pam" , 30 , 34567)
+print(employee3)
+
+employee4 = employee("Jim" , 35 , 12345)
+print(employee4)
+
+                    
+def is_higher_rank(employee1, employee2): 
+    if employee1 == "1":
+        employee1 = employee("Michael", 45, 12345)
+        if employee2 == "1":
+            employee2 = employee("Michael", 45, 12345)
+            if (employee1.rankID == employee2.rankID):
+                print ("These employees are both the same rank")
+            elif (employee1.rankID < employee2.rankID):
+                print (employee2.name , "is superior rank to " , employee1.name)
+            else:
+                print (employee1.name , "is superior rank to " , employee2.name)       
+            
+    
+        elif employee2 == "2":
+            employee2 = employee("Dwight", 40 , 23456)
+            if (employee1.rankID == employee2.rankID):
+                print ("These employees are both the same rank")
+            elif (employee1.rankID < employee2.rankID):
+                print (employee2.name , "is superior rank to " , employee1.name)
+            else:
+                print (employee1.name , "is superior rank to " , employee2.name)       
+    
+        elif employee2 == "3":
+            employee2 = employee("Pam" , 30 , 34567)
+            if (employee1.rankID == employee2.rankID):
+                print ("These employees are both the same rank")
+            elif (employee1.rankID < employee2.rankID):
+                print (employee2.name , "is superior rank to " , employee1.name)
+            else:
+                print (employee1.name , "is superior rank to " , employee2.name)       
+            
+    
+        elif employee2 == "4":
+            employee2 = employee("Jim" , 35 , 12345)
+            if (employee1.rankID == employee2.rankID):
+                print ("These employees are both the same rank")
+            elif (employee1.rankID < employee2.rankID):
+                print (employee2.name , "is superior rank to " , employee1.name)
+            else:
+                print (employee1.name , "is superior rank to " , employee2.name)       
+        
+        
+    
+    elif employee1 == "2":
+        employee1 = employee("Dwight", 40 , 23456)
+        if employee2 == "1":
+            employee2 = employee("Michael", 45, 12345)
+            if (employee1.rankID == employee2.rankID):
+                print ("These employees are both the same rank")
+            elif (employee1.rankID < employee2.rankID):
+                print (employee2.name , "is superior rank to " , employee1.name)
+            else:
+                print (employee1.name , "is superior rank to " , employee2.name)       
+            
+    
+        elif employee2 == "2":
+            employee2 = employee("Dwight", 40 , 23456)
+            if (employee1.rankID == employee2.rankID):
+                print ("These employees are both the same rank")
+            elif (employee1.rankID < employee2.rankID):
+                print (employee2.name , "is superior rank to " , employee1.name)
+            else:
+                print (employee1.name , "is superior rank to " , employee2.name)       
+    
+        elif employee2 == "3":
+            employee2 = employee("Pam" , 30 , 34567)
+            if (employee1.rankID == employee2.rankID):
+                print ("These employees are both the same rank")
+            elif (employee1.rankID < employee2.rankID):
+                print (employee2.name , "is superior rank to " , employee1.name)
+            else:
+                print (employee1.name , "is superior rank to " , employee2.name)       
+            
+    
+        elif employee2 == "4":
+            employee2 = employee("Jim" , 35 , 12345)
+            if (employee1.rankID == employee2.rankID):
+                print ("These employees are both the same rank")
+            elif (employee1.rankID < employee2.rankID):
+                print (employee2.name , "is superior rank to " , employee1.name)
+            else:
+                print (employee1.name , "is superior rank to " , employee2.name)       
+        
+        
+    
+    elif employee1 == "3":
+        employee1 = employee("Pam" , 30 , 34567)
+        if employee2 == "1":
+            employee2 = employee("Michael", 45, 12345)
+            if (employee1.rankID == employee2.rankID):
+                print ("These employees are both the same rank")
+            elif (employee1.rankID < employee2.rankID):
+                print (employee2.name , "is superior rank to " , employee1.name)
+            else:
+                print (employee1.name , "is superior rank to " , employee2.name)       
+            
+    
+        elif employee2 == "2":
+            employee2 = employee("Dwight", 40 , 23456)
+            if (employee1.rankID == employee2.rankID):
+                print ("These employees are both the same rank")
+            elif (employee1.rankID < employee2.rankID):
+                print (employee2.name , "is superior rank to " , employee1.name)
+            else:
+                print (employee1.name , "is superior rank to " , employee2.name)       
+    
+        elif employee2 == "3":
+            employee2 = employee("Pam" , 30 , 34567)
+            if (employee1.rankID == employee2.rankID):
+                print ("These employees are both the same rank")
+            elif (employee1.rankID < employee2.rankID):
+                print (employee2.name , "is superior rank to " , employee1.name)
+            else:
+                print (employee1.name , "is superior rank to " , employee2.name)       
+            
+    
+        elif employee2 == "4":
+            employee2 = employee("Jim" , 35 , 12345)
+            if (employee1.rankID == employee2.rankID):
+                print ("These employees are both the same rank")
+            elif (employee1.rankID < employee2.rankID):
+                print (employee2.name , "is superior rank to " , employee1.name)
+            else:
+                print (employee1.name , "is superior rank to " , employee2.name)       
+        
+        
+    
+    elif employee1 == "4":
+        employee1 = employee("Jim" , 35 , 12345)
+        if employee2 == "1":
+            employee2 = employee("Michael", 45, 12345)
+            if (employee1.rankID == employee2.rankID):
+                print ("These employees are both the same rank")
+            elif (employee1.rankID < employee2.rankID):
+                print (employee2.name , "is superior rank to " , employee1.name)
+            else:
+                print (employee1.name , "is superior rank to " , employee2.name)       
+            
+    
+        elif employee2 == "2":
+            employee2 = employee("Dwight", 40 , 23456)
+            if (employee1.rankID == employee2.rankID):
+                print ("These employees are both the same rank")
+            elif (employee1.rankID < employee2.rankID):
+                print (employee2.name , "is superior rank to " , employee1.name)
+            else:
+                print (employee1.name , "is superior rank to " , employee2.name)       
+    
+        elif employee2 == "3":
+            employee2 = employee("Pam" , 30 , 34567)
+            if (employee1.rankID == employee2.rankID):
+                print ("These employees are both the same rank")
+            elif (employee1.rankID < employee2.rankID):
+                print (employee2.name , "is superior rank to " , employee1.name)
+            else:
+                print (employee1.name , "is superior rank to " , employee2.name)       
+            
+    
+        elif employee2 == "4":
+            employee2 = employee("Jim" , 35 , 12345)
+            if (employee1.rankID == employee2.rankID):
+                print ("These employees are both the same rank")
+            elif (employee1.rankID < employee2.rankID):
+                print (employee2.name , "is superior rank to " , employee1.name)
+            else:
+                print (employee1.name , "is superior rank to " , employee2.name)               
+        
+    else:
+        print ("oops! something went wrong")
+        sys.exit()
+    
+employee1 = input("enter employee 1-4: ") 
+employee2 = input("enter employee 1-4: ")
+
+is_higher_rank(employee1, employee2)    
+
+    
+  
+
+
+    
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
