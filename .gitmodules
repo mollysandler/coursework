@@ -1,3 +1,6 @@
 [submodule "365_RelationalDatabases/MollyCCC"]
 	path = 365_RelationalDatabases/MollyCCC
 	url = https://github.com/mosandle/MollyCCC
+[submodule "365_RelationalDatabases/Open-Recipes"]
+	path = 365_RelationalDatabases/Open-Recipes
+	url = git@github.com:AlfredMadere/open-recipes.git
