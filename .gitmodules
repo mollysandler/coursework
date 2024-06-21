@@ -4,3 +4,9 @@
 [submodule "365_RelationalDatabases/Open-Recipes"]
 	path = 365_RelationalDatabases/Open-Recipes
 	url = git@github.com:AlfredMadere/open-recipes.git
+[submodule "321_ComputerSecurity/assignment-2"]
+	path = 321_ComputerSecurity/assignment-2
+	url = git@github.com:mollysandler/csc321-assignment2.git
+[submodule "321_ComputerSecurity/assignment-3"]
+	path = 321_ComputerSecurity/assignment-3
+	url = git@github.com:mollysandler/csc321-assignment-3.git
