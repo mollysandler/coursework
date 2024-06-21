@@ -10,3 +10,6 @@
 [submodule "321_ComputerSecurity/assignment-3"]
 	path = 321_ComputerSecurity/assignment-3
 	url = git@github.com:mollysandler/csc321-assignment-3.git
+[submodule "321_ComputerSecurity/assignment-4"]
+	path = 321_ComputerSecurity/assignment-4
+	url = git@github.com:glaurain/cpe321-assignment-4.git
