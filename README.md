@@ -18,7 +18,7 @@ While many college students work on personal projects, one of the great things a
 
 <b>357</b> is Systems Programming, in C and Unix. Learned more about how to use memory, as well as how to use Unix commands. Learned C syntax too. <br>
 
-<b>365</b> is Relational Databases. We were given the basic structure of a potion shop that had buyers and sellers, and had to create a functional API using it. This used Python and PostgreSQL. We also had a long term group project, where we created a Recipes API using Python and PostgreSQL for the backend, with React and Express for the frontend. We also worked on query challenges with MySQL. <br>
+<b>365</b> is Relational Databases. We were given the basic structure of a potion shop that had buyers and sellers, and had to create a functional API using it. This used Python and PostgreSQL. We also had a long term group project, where we created a Recipes API using Python and PostgreSQL for the backend, with React and Express for the frontend. We also worked on query challenges using MySQL, not shown. <br>
 
 <b>429</b> is Topics in Cybersecurity, specifically Secure Web Servers. We were tasked as a group with keeping a server up and running for the entire quarter. Other groups and our professor could attack us, and we had to mitigate these attacks. We wrote scripts shown here that alerted us if our site itself or its functionality was down, so we could limit the time down. <br>
 
