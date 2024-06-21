@@ -40,4 +40,8 @@
 [submodule "430_ProgrammingLanguages/assignment-5"]
 	path = 430_ProgrammingLanguages/assignment-5
 	url = git@github.com:keen-cp/assignment-5-mollysandler.git
+[submodule "309_SoftwareEngineering2/csc309project"]
+	path = 309_SoftwareEngineering2/DogWorld
+	url = git@github.com:mollysandler/csc309project.git
+
 
