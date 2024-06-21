@@ -16,3 +16,27 @@
 [submodule "429_SecureWebServers/scripts"]
 	path = 429_SecureWebServers/scripts
 	url = git@github.com:anthony-yeo/CSC-429.git
+[submodule "430_ProgrammingLanguages/assignment-4"]
+	path = 430_ProgrammingLanguages/assignment-4
+	url = git@github.com:keen-cp/assignment-4-mollysandler.git
+[submodule "430_ProgrammingLanguages/assignment-7"]
+	path = 430_ProgrammingLanguages/assignment-7
+	url = git@github.com:keen-cp/assignment-7-mollysandler.git
+[submodule "430_ProgrammingLanguages/assignment-6"]
+	path = 430_ProgrammingLanguages/assignment-6
+	url = git@github.com:keen-cp/assignment-6-mollysandler.git
+[submodule "430_ProgrammingLanguages/assignment-2"]
+	path = 430_ProgrammingLanguages/assignment-2
+	url = git@github.com:keen-cp/assignment-2-mollysandler.git
+[submodule "430_ProgrammingLanguages/assignment-3"]
+	path = 430_ProgrammingLanguages/assignment-3
+	url = git@github.com:keen-cp/assignment-3-mollysandler.git
+[submodule "430_ProgrammingLanguages/assignment-8"]
+	path = 430_ProgrammingLanguages/assignment-8
+	url = git@github.com:keen-cp/assignment-8-mollysandler.git
+[submodule "430_ProgrammingLanguages/assignment-1"]
+	path = 430_ProgrammingLanguages/assignment-1
+	url = git@github.com:keen-cp/assignment-1-mollysandler.git
+[submodule "430_ProgrammingLanguages/assignment-5"]
+	path = 430_ProgrammingLanguages/assignment-5
+	url = git@github.com:keen-cp/assignment-5-mollysandler.git
