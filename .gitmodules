@@ -13,3 +13,6 @@
 [submodule "321_ComputerSecurity/assignment-4"]
 	path = 321_ComputerSecurity/assignment-4
 	url = git@github.com:glaurain/cpe321-assignment-4.git
+[submodule "429_SecureWebServers/scripts"]
+	path = 429_SecureWebServers/scripts
+	url = git@github.com:anthony-yeo/CSC-429.git
