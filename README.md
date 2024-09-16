@@ -12,7 +12,7 @@ While many college students work on personal projects, one of the great things a
 
 <b>305</b> is Individual Software Development. We learned how to create medium sized projects from scratch, with functional logical components and GUIs, all in Java. <br>
 
-<b>308 + 309</b> and paired classes, Software Engineering I and II. We worked in one team for twenty weeks to create a robust and deployable program, all in Java. We got to connect a robotic dog made with an arduino to this project, which taught me a bit about embedded systemsAlso learned a lot about working with Github on branches with a team.<br>
+<b>308 + 309</b> are paired classes, Software Engineering I and II. We worked in one team for twenty weeks to create a robust and deployable program, all in Java. We got to connect a robotic dog made with an arduino to this project, which taught me a bit about embedded systems. Also learned a lot about working with Github on branches with a team.<br>
 
 <b>321</b> is Computer Security. We learned about encryption and ciphers, brute force password cracking, public and private keys, and social engineering. We used Python to learn these lessons.<br>
 
