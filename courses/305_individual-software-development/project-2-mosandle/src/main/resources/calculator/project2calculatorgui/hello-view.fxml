@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_CENTER" prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculator.project2calculatorgui.HelloController">
+   <children>
+      <VBox fx:id="game" alignment="TOP_CENTER" prefHeight="97.0" prefWidth="456.0">
+         <children>
+            <Group>
+               <children>
+                  <RadioButton fx:id="prefix" layoutY="20.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="97.0" text="Prefix" textAlignment="RIGHT">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="expressType" />
+                     </toggleGroup>
+                     <padding>
+                        <Insets top="20.0" />
+                     </padding>
+                  </RadioButton>
+                  <RadioButton fx:id="postfix" layoutX="110.0" layoutY="20.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="97.0" text="Postfix" textAlignment="RIGHT" toggleGroup="$expressType">
+                     <padding>
+                        <Insets top="20.0" />
+                     </padding>
+                  </RadioButton>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Group>
+            <TextField fx:id="textfield">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </TextField>
+            <Button fx:id="calculate" mnemonicParsing="false" prefHeight="26.0" prefWidth="104.0" text="Calculate">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+      <GridPane fx:id="gridpane" alignment="BOTTOM_CENTER" gridLinesVisible="true" prefHeight="96.0" prefWidth="480.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="200.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="200.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="200.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="-Infinity" minHeight="40.0" prefHeight="20.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="40.0" prefHeight="20.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="40.0" prefHeight="20.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="46.0" minHeight="40.0" prefHeight="20.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="46.0" minHeight="40.0" prefHeight="20.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="-Infinity" minHeight="40.0" prefHeight="20.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </GridPane>
+      <ComboBox fx:id="history" prefWidth="150.0" promptText="History" />
+      <VBox spacing="5.0">
+         <children>
+            <TextField fx:id="varName">
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets right="190.0" />
+               </VBox.margin>
+            </TextField>
+            <Label text="Enter the variable name above:" />
+            <TextField fx:id="varValue">
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets right="190.0" />
+               </VBox.margin>
+            </TextField>
+            <Label text="Enter the variable value above:" />
+            <Button fx:id="varCalc" mnemonicParsing="false" text="Go" />
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <VBox.margin>
+            <Insets bottom="20.0" left="100.0" right="100.0" top="10.0" />
+         </VBox.margin>
+      </VBox>
+      <TableView fx:id="table" editable="true" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="listName" prefWidth="86.0" text="Name" />
+          <TableColumn fx:id="listValue" prefWidth="64.0" text="Value" />
+        </columns>
+         <padding>
+            <Insets right="10.0" />
+         </padding>
+         <VBox.margin>
+            <Insets bottom="10.0" left="100.0" right="100.0" top="10.0" />
+         </VBox.margin>
+      </TableView>
+   </children>
+</VBox>
