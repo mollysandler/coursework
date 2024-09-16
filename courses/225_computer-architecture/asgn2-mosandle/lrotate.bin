@@ -1,0 +1,19 @@
+; Left-rotates the bits of the value at 0x3050 once.
+; CSC 225, Assignment 2
+; Given code, Winter '20
+
+0011 0000 0000 0000     ; Start at 0x3000. x3000
+0010 000 001001111      ; Load 0x3050 into R0. 
+
+0000 100 000000001      ; branch one line if negative 
+
+;if positive
+0001 000 000 000 000    ; add the number to itself and put it into R0   
+0000 011 000000010      ; branch two lines if postive or zero 
+
+;if negative
+0001 000 000 000 000    ;add number to itself and put it into R0
+0001 000 000 1 00001    ;add one to the number
+
+0011 000 001001010      ; store R0 at 0x3051.              
+1111 0000 00100101      ; Halt. x3005
