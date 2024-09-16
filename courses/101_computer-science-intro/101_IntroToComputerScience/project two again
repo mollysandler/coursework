@@ -1,0 +1,159 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Oct 24 16:46:50 2021
+
+@author: mollysandler
+"""
+import sys
+
+def error():
+    print('Sorry we cannot help you here')
+    sys.exit
+    
+def getMilk():
+    m = input('do you want milk with that? ')
+    if m.lower() == "y" or m.lower() == "n":
+        print ("Great, thank you")
+    elif m.lower() != "y" and m.lower() != "n" :
+        print ("Sorry! Invalid input, try again")
+        m = input("Would you like m with that? ")
+        if m.lower() != "y" and m.lower() != "n" :
+            print ("Sorry! Invalid input, try again")
+            m = input("Would you like m with that? ")
+            if m.lower() != "y" and m.lower() != "n" :
+                error()
+    return m
+    
+
+def getType():
+    ctype = input('plesae enter the type of coffee you want: ')
+    if ctype.lower() == "latte" or ctype.lower() == "iced latte":
+        print ("Great, thank you")
+    elif  ctype.lower() == "black" or ctype.lower() == "iced black":
+        print ("Great, thank you")
+        milk = getMilk()
+        return milk
+        
+    elif ctype.lower() != "latte" and ctype.lower() != "iced latte" and ctype.lower() != "black" and ctype.lower() != "iced black":
+        print ("Sorry! Invalid Input, try again")
+        ctype = input('plesae enter the type of coffee you want: ')
+        if ctype.lower() != "latte" and ctype.lower() != "iced latte" and ctype.lower() != "black" and ctype.lower() != "iced black":
+            print ("Sorry! Invalid Input, try again")
+            ctype = input('plesae enter the type of coffee you want: ')
+            if ctype.lower() != "latte" and ctype.lower() != "iced latte" and ctype.lower() != "black" and ctype.lower() != "iced black":
+                error()      
+            
+    return ctype
+
+
+def getSize():
+    size = input('please enter the size you want: ')
+    if size.lower() == "short" or size.lower() == "regular" or size.lower() == 'large':
+        print ("Great, thank you")
+    elif size.lower() != "short" and size.lower() != "regular" and size.lower() != "large":
+        print ("Sorry! Invalid Input, try again")
+        size = input('please enter the size you want: ')
+        if size.lower() != "short" and size.lower() != "tall" and size.lower() != "large":
+            print ("Sorry! Invalid Input, try again")
+            size = input('please enter the size you want: ')
+            if size.lower() != "short" and size.lower() != "tall" and size.lower() != "large":
+                error()
+    return size
+
+
+def getPrice(ctype, size):
+    price = 0
+    if ctype.lower() == "black":
+        if size.lower() == "short":
+            if milk.lower() == "y":
+                price = 1.30
+                print('hi hih ih hihi hih h')
+            elif milk.lower() == "n":
+                price = 1.25
+        elif size.lower() == "regular":
+            if milk.lower() == "y":
+                price = 1.60
+            elif milk.lower() == "n":
+                price = 1.50
+        elif size == "large":
+            if milk.lower() == "y":
+                price = 1.95
+            elif milk.lower() == "n":
+                price = 1.75
+    elif ctype.lower() == "iced black":
+        if size.lower() == "short":
+            if milk.lower() == "y":
+                price = "1.45"
+            elif milk.lower() == "n":
+                price = "1.40"
+        elif size.lower() == "regular":
+            if milk.lower() == "y":
+                price = "2.00"
+            elif milk.lower() == "n":
+                price = "1.90"
+        elif size.lower() == "large":
+            if milk.lower() == "y":
+                price = "2.60"
+            elif milk.lower() == "n":
+                price = "2.40"
+    elif ctype.lower() == "latte":
+        if size.lower() == "short":
+            price = "2.00"
+        elif size.lower() == "regular":
+            price = "2.50"
+        elif size.lower() == "large":
+            price = "3.00"
+    elif ctype.lower() == "iced latte":
+        if size.lower() == "short":
+            price = "2.20"
+        elif size.lower() == "regular":
+            price = "2.70"
+            print('hi hih ih hihi hih h')
+        elif size.lower() == "large":
+            price = "3.20"
+    print(price)
+    return price 
+    
+
+
+    
+# Class for coffee
+class Order:    
+    # The init method or constructor
+    def __init__(self, ctype, milk, size, price):
+           
+        # Instance Variable
+        self.ctype = ctype
+        self. milk = milk
+        self.size = size
+        self.price = price         
+   
+ 
+ctype = getType()
+size = getSize() 
+milk = getMilk()
+
+def finalOrder():
+    return Order(ctype, milk, size, getPrice(ctype, size))
+
+
+
+def __repr__(self):
+     self.ctype = "Coffee Type:" + ctype
+     self. milk = "Milk Added"+ milk
+     self.size = "Coffee Size: " + size
+    
+
+
+
+
+
+
+
+
+
+
+
+
+

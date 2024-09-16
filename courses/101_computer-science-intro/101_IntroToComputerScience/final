@@ -1,0 +1,19 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Nov  2 15:24:03 2021
+
+@author: mollysandler
+"""
+
+studentGrade = [60, 12, 34, 56, 78]
+
+def calculate_average(grades):
+    total = grades[0] + grades[1] + grades[2] + grades[3] + grades[4]
+    average = total/5
+    grades.sort()
+    print(average)
+    print(grades)
+    return average
+
+calculate_average(studentGrade)

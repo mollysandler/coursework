@@ -1,0 +1,27 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Oct 27 13:06:47 2021
+
+@author: mollysandler
+"""
+
+    
+import unittest 
+
+from new import *
+
+class test_is_higher_Rank(unittest.TestCase): 
+    def test_employee1_and_employee2(self):
+        self.assertEqual(is_higher_rank(employee1, employee1),"These employees are both the same rank"), "there is an issue"
+        
+        self.assertEqual(is_higher_rank(employee2, employee3),"Pam is a superior rank to Dwight"), "there is an issue"
+        
+        self.assertEqual(is_higher_rank(employee3, employee4),"Pam is a superior rank to Jim"), "there is an issue"
+        
+        self.assertEqual(is_higher_rank(employee1, employee4),"These employees are both the same rank"), "there is an issue"
+       
+        
+if __name__ == "__main__":
+    unittest.main()   
+
