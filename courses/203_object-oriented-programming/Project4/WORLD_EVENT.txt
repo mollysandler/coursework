@@ -1,0 +1,5 @@
+﻿World Changing Event: 
+* When you click a square with your mouse, a barrel of toxic sludge appears
+* This barrel “spills” the sludge into its surrounding squares by generating a sludge entity into its cardinal neighbors (4 total squares, plus a square for the barrel itself). 
+   * Any octopi that go adjacent to any square of this sludge that was spilled (it does not move) become “mutant octopi” which move faster than normal octopi and eat multiple shrimp before getting full, as opposed to one fish. They otherwise follow the typical octopi rules of eating, going to Atlantis, and then becoming hungry again. The mutant octopi also have a different look from the normal octopi.
+* The barrel also spawns shrimp in the four diagonal squares nearest to it that then go off into the world and eat seagrass. Their actionPeriod and animationPeriod are similar to those of the other original entities.

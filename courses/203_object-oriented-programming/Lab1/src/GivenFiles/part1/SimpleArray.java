@@ -1,0 +1,43 @@
+//Done maybe
+package GivenFiles.part1;
+
+public class SimpleArray {
+
+  /**
+   * Write a function that takes in an applicant's numerical scores and returns
+   * Boolean values to tell us if they are above a certain threshold.
+   * 
+   * For example, if the applicant's scores are [80, 85, 89, 92, 76, 81], and the
+   * threshold value is 85, return [false, false, true, true, false, false].
+   * 
+   * @param scores    The applicant's array of scores
+   * @param threshold The threshold value
+   * @return An array of boolean values: true if the score is higher than
+   *         threshold, false otherwise
+   */
+  public static boolean[] applicantAcceptable(int[] scores, int threshold) {
+    /*
+     * TO DO: This size is not right. Fix it to work with any input array. The
+     * length of an array is accessible through an array's length field (e.g.,
+     * values.length).
+     */
+    boolean[] highScores = new boolean[scores.length]; //make input the length of the input array
+    /*
+     * TO DO: The output array, highScores, should hold as its elements the
+     * appropriate boolean (true or false) value.
+     * 
+     * Write a loop to compute the acceptability of the scores based on the
+     * threshold and place the result into the output array.
+     */
+      for(int i = 0; i < scores.length; i++) {
+        if (scores[i] > threshold) {  //if grade at given index is above threshhold
+          highScores[i] = true; //make value at that point true
+        }
+        else{
+          highScores[i] = false; //otherwise make it false
+        }
+      }//end of for loop
+    return highScores; //return final
+  }
+}
+

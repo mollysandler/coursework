@@ -1,0 +1,7 @@
+﻿Molly Sandler and Zach Stone
+
+
+Zach mostly focused on the A* algorithm while Molly mostly focused on the world changing event, entity modifications, and new entity. Although we had this split, we both helped each other out when one of us had an issue with their respective area of the project and worked together. 
+
+
+We used Molly’s Project 3 as the baseline.
