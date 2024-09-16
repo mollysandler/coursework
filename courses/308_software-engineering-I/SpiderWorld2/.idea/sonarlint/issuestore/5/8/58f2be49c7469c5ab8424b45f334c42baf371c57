@@ -1,0 +1,6 @@
+
+w
+java:S1319"bThe type of "level" should be an interface such as "Map" rather than the implementation "HashMap".(¼Îë=
+{	java:S115
+"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ôş½úÿÿÿÿ8º³·…Ø1
+{	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(øñÖ©ÿÿÿÿÿ8º³·…Ø1

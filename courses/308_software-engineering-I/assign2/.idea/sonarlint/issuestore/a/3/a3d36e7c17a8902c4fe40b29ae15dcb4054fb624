@@ -1,0 +1,13 @@
+
+E
+java:S1066"/Merge this if statement with the enclosing one.(¸•êæ
+‹
+java:S1319."pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(®Ã¶Ôøÿÿÿÿ
+€
+java:S1319."eThe type of "array" should be an interface such as "List" rather than the implementation "ArrayList".(®Ã¶Ôøÿÿÿÿ
+e	java:S1037"KSplit this 149 characters long line (which is greater than 120 authorized).(áˆßéúÿÿÿÿ
+_	java:S103;"KSplit this 129 characters long line (which is greater than 120 authorized).(êÎºJ
+P
+java:S1118	":Add a private constructor to hide the implicit public one.(¬˜Êœ
+c
+java:S1107:"HMove this "else" on the same line that the previous closing curly brace.(¦þòóúÿÿÿÿ
