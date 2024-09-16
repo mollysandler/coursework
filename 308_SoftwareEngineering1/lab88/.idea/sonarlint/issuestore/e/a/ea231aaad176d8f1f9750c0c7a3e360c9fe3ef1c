@@ -1,22 +1,0 @@
-
-i
-java:S1223"LRename this method to prevent any misunderstanding or make it a constructor.(ø¼“·8ŞÊî‡á1
-=
-java:S2129" Remove this "Double" constructor(İ÷‰Û8ƒËî‡á1
-e
-java:S5738"HRemove this call to a deprecated method, it has been marked for removal.(İ÷‰Û8„Ëî‡á1
-<
-java:S2129" Remove this "Double" constructor(´Ä´8…Ëî‡á1
-d
-java:S5738"HRemove this call to a deprecated method, it has been marked for removal.(´Ä´8…Ëî‡á1
-=
-java:S2129" Remove this "Double" constructor(ŸÃõú8‡Ëî‡á1
-e
-java:S5738"HRemove this call to a deprecated method, it has been marked for removal.(ŸÃõú8‡Ëî‡á1
-<
-java:S2129" Remove this "Double" constructor(´ø’G8‰Ëî‡á1
-d
-java:S5738"HRemove this call to a deprecated method, it has been marked for removal.(´ø’G8‰Ëî‡á1
-j	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ø¼“·8‰Ëî‡á1
-H
-java:S1172"+Remove this unused method parameter "args".(ø¼“·8ŒËî‡á1

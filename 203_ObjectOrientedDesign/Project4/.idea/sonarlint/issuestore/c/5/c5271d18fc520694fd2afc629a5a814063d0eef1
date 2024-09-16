@@ -1,18 +1,0 @@
-
-Z
-java:S1105"?Move this left curly brace to the end of previous line of code.(ÒÌâ–øÿÿÿÿ
-Z
-java:S1105%"?Move this left curly brace to the end of previous line of code.(ÒÌâ–øÿÿÿÿ
-Z
-java:S1105)"?Move this left curly brace to the end of previous line of code.(ÒÌâ–øÿÿÿÿ
-Z
-java:S1105@"?Move this left curly brace to the end of previous line of code.(ÒÌâ–øÿÿÿÿ
-0
-java:S1220""Move this file to a named package.
-O
-java:S3516"9Refactor this method to not always return the same value.(†…í‡
-`	java:S103?"KSplit this 124 characters long line (which is greater than 120 authorized).(ÂÂıÊ
-c
-java:S1107$"HMove this "else" on the same line that the previous closing curly brace.(„¶áìøÿÿÿÿ
-Y
-java:S11558">Use isEmpty() to check whether the collection is empty or not.(­Üÿÿÿÿÿ

@@ -1,11 +1,0 @@
-
-l	java:S116"PRename this field "x_wid" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢Ùı8‹î“Ø1
-l	java:S116"PRename this field "y_len" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«İ‡¯8Œî“Ø1
-s	java:S116"RRename this field "x_space" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Û·ç‹üÿÿÿÿ8Œî“Ø1
-s	java:S116"RRename this field "y_space" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Öò·Óùÿÿÿÿ8Œî“Ø1
-K
-java:S2140")Use "java.util.Random.nextInt()" instead.(ß ÓŒûÿÿÿÿ8’î“Ø1
-K
-java:S2140")Use "java.util.Random.nextInt()" instead.(ß ÓŒûÿÿÿÿ8“î“Ø1
-K
-java:S2140")Use "java.util.Random.nextInt()" instead.(ß ÓŒûÿÿÿÿ8í–Ø1

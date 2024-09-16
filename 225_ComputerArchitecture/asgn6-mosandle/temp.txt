@@ -1,1 +1,0 @@
-Enter two positive integers: gcd(6, 8) = 2

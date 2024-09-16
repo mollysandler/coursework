@@ -1,1 +1,0 @@
-void odds(int n);
