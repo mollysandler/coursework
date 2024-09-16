@@ -1,0 +1,9 @@
+var a : int;
+var b : string;
+var f : (int -> none);
+
+a = 7;
+f = anon (a : int) : none { print (a); print (":n"); };
+f(2);
+print (a);
+print (":n");

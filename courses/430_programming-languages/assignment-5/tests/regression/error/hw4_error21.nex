@@ -1,0 +1,13 @@
+var j; var i;
+   i = true;
+   j = 5;
+   while (i)
+   {
+      if (j < 0)
+      {
+         i = none;
+      }
+      j = j - 1;
+      print j;
+      print ":n";
+   }

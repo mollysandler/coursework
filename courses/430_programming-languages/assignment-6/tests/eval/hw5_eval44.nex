@@ -1,0 +1,5 @@
+fun f() : none {}
+print (f);
+print (":n");
+print (anon () : none {});
+print (":n");

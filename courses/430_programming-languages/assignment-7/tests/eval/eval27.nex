@@ -1,0 +1,10 @@
+class A
+{
+}
+
+var A;
+
+A = new A;
+
+print A;
+print ":n";

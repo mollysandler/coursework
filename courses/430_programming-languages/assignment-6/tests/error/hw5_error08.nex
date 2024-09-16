@@ -1,0 +1,7 @@
+fun f() : bool
+{
+   return false;
+}
+print "should not get here:n";
+1 / 0;
+   print (f() + 1);

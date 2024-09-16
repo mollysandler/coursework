@@ -1,0 +1,22 @@
+var b : int;
+var c : int;
+
+fun f(g : (-> none)) : none
+{
+   var b : int;
+   var c : int;
+   b = 100; c = 200;
+   g();
+   print (b);
+   print (":n");
+   print (c);
+   print (":n");
+}
+
+   b = 1;
+   c = 2;
+   f(anon () : none { b = 99; c = 21;});
+   print (b);
+   print (":n");
+   print (c);
+   print (":n");

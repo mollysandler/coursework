@@ -1,0 +1,13 @@
+var y : int;
+fun f() : none
+{
+   var y : int;
+   y = 100;
+}
+
+y = 9;
+print (y);
+print (":n");
+f();
+print (y);
+print (":n");

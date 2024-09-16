@@ -1,0 +1,21 @@
+class A
+{
+   var x;
+   var y;
+
+   fun f()
+   {
+      print this.x;
+      print ":n";
+   }
+
+   fun init(x, y)
+   {
+      this.x = x;
+      this.y = y;
+
+      return this;
+   }
+}
+
+new A.init(-13, 7).f();

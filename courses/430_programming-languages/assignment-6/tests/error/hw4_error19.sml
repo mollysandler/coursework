@@ -1,0 +1,15 @@
+val prog =
+  PROGRAM
+    {decls=[],func_decls=[],
+     stmts=[ST_PRINT {exp=EXP_STRING "should not get here:n"},
+            ST_EXP
+              {exp=EXP_BINARY {lft=EXP_NUM 1,opr=BOP_DIVIDE,rht=EXP_NUM 0}},
+            ST_EXP
+              {exp=EXP_COND
+                     {elseExp=EXP_BINARY
+                                {lft=EXP_NONE,opr=BOP_MINUS,rht=EXP_BOOL true},
+                      guard=EXP_BOOL true,
+                      thenExp=EXP_BINARY
+                                {lft=EXP_NUM 1,opr=BOP_PLUS,
+                                 rht=EXP_BOOL false}}}]} : program
+;

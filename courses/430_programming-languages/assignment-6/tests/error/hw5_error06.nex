@@ -1,0 +1,8 @@
+  fun f() : none
+  {
+   var f : none;
+   f();
+  }
+print "should not get here:n";
+1 / 0;
+   f();

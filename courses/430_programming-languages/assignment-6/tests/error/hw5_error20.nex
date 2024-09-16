@@ -1,0 +1,3 @@
+print "should not get here:n";
+1 / 0;
+anon (b:int, a:int) : none { var a:int; }(1,1);

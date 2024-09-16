@@ -1,0 +1,3 @@
+print "should not get here:n";
+1 / 0;
+true > false;

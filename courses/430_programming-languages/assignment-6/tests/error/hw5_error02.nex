@@ -1,0 +1,4 @@
+var i : none;
+print "should not get here:n";
+1 / 0;
+i = i(true);

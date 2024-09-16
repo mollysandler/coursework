@@ -1,0 +1,12 @@
+yesle (1 < 2)
+	{
+		yesle (2 < 3)
+		{
+			raspetchatat (verna);
+		}
+		raspetchatat (((verna)));
+	}
+yesho
+{
+	raspetchatat falshiviy;
+}

@@ -1,0 +1,17 @@
+Tsena keywordTokens =
+[ "yesho", TK_ELSE
+"falshiviy", TK_FALSE
+"yesle", TK_IF
+"raspetchatat", TK_PRINT
+"verna", TK_TRUE
+"nikto", TK_NONE
+"peremenaya", TK_VAR
+"poka", TK_WHILE
+"deleigh", TK_DO
+]
+
+I chose these because they are Russian translations, and I have two roommates that are Russian. 
+We were recently talking about how one of their dads work in computer science, and their coding is done
+entire in English, despite the fact that most people at their company do not speak any English at all. 
+I talked with them about this assignment, and they helped me translate the keywords with the closest possible
+conjugation for accuracy based on the assignment. 

@@ -1,0 +1,267 @@
+
+--------- BEGIN Test tests/error/error01.nex ---------
+expected ';', no token found
+--------- END Test tests/error/error01.nex ---------
+
+--------- BEGIN Test tests/error/error02.nex ---------
+token ';' after logical end of program
+--------- END Test tests/error/error02.nex ---------
+
+--------- BEGIN Test tests/error/error03.nex ---------
+expected ';', found '2'
+--------- END Test tests/error/error03.nex ---------
+
+--------- BEGIN Test tests/error/error04.nex ---------
+expected ';', no token found
+--------- END Test tests/error/error04.nex ---------
+
+--------- BEGIN Test tests/error/error05.nex ---------
+expected ';', found ','
+--------- END Test tests/error/error05.nex ---------
+
+--------- BEGIN Test tests/error/error06.nex ---------
+token '+' after logical end of program
+--------- END Test tests/error/error06.nex ---------
+
+--------- BEGIN Test tests/error/error07.nex ---------
+expected 'value', found ';'
+--------- END Test tests/error/error07.nex ---------
+
+--------- BEGIN Test tests/error/error08.nex ---------
+expected 'value', found ';'
+--------- END Test tests/error/error08.nex ---------
+
+--------- BEGIN Test tests/error/error09.nex ---------
+expected 'value', found ':'
+--------- END Test tests/error/error09.nex ---------
+
+--------- BEGIN Test tests/error/error10.nex ---------
+expected 'value', found ';'
+--------- END Test tests/error/error10.nex ---------
+
+--------- BEGIN Test tests/error/error11.nex ---------
+token '&&' after logical end of program
+--------- END Test tests/error/error11.nex ---------
+
+--------- BEGIN Test tests/error/error12.nex ---------
+expected 'value', found '*'
+--------- END Test tests/error/error12.nex ---------
+
+--------- BEGIN Test tests/error/error13.nex ---------
+expected ':', found ')'
+--------- END Test tests/error/error13.nex ---------
+
+--------- BEGIN Test tests/error/error14.nex ---------
+expected 'value', found '?'
+--------- END Test tests/error/error14.nex ---------
+
+--------- BEGIN Test tests/error/error15.nex ---------
+expected 'value', found ';'
+--------- END Test tests/error/error15.nex ---------
+
+--------- BEGIN Test tests/error/error16.nex ---------
+expected ')', found '('
+--------- END Test tests/error/error16.nex ---------
+
+--------- BEGIN Test tests/error/error17.nex ---------
+expected ';', found ')'
+--------- END Test tests/error/error17.nex ---------
+
+--------- BEGIN Test tests/error/error18.nex ---------
+expected ';', no token found
+--------- END Test tests/error/error18.nex ---------
+
+--------- BEGIN Test tests/error/error19.nex ---------
+expected 'value', found ';'
+--------- END Test tests/error/error19.nex ---------
+
+--------- BEGIN Test tests/error/error20.nex ---------
+token '=' after logical end of program
+--------- END Test tests/error/error20.nex ---------
+
+--------- BEGIN Test tests/error/error21.nex ---------
+expected 'value', found ';'
+--------- END Test tests/error/error21.nex ---------
+
+--------- BEGIN Test tests/error/error22.nex ---------
+expected 'value', found ':'
+--------- END Test tests/error/error22.nex ---------
+
+--------- BEGIN Test tests/error/error23.nex ---------
+expected ':', found ')'
+--------- END Test tests/error/error23.nex ---------
+
+--------- BEGIN Test tests/error/error24.nex ---------
+unexpected '='
+--------- END Test tests/error/error24.nex ---------
+
+--------- BEGIN Test tests/error/error25.nex ---------
+unexpected '='
+--------- END Test tests/error/error25.nex ---------
+
+--------- BEGIN Test tests/error/error26.nex ---------
+unexpected '='
+--------- END Test tests/error/error26.nex ---------
+
+--------- BEGIN Test tests/error/error27.nex ---------
+expected 'value', found ';'
+--------- END Test tests/error/error27.nex ---------
+
+--------- BEGIN Test tests/error/error28.nex ---------
+expected '}', no token found
+--------- END Test tests/error/error28.nex ---------
+
+--------- BEGIN Test tests/error/error29.nex ---------
+expected 'expression', no token found
+--------- END Test tests/error/error29.nex ---------
+
+--------- BEGIN Test tests/error/error30.nex ---------
+expected ';', found '2'
+--------- END Test tests/error/error30.nex ---------
+
+--------- BEGIN Test tests/error/error31.nex ---------
+expected '{', found 'raspetchatat'
+--------- END Test tests/error/error31.nex ---------
+
+--------- BEGIN Test tests/error/error32.nex ---------
+expected ')', found '{'
+--------- END Test tests/error/error32.nex ---------
+
+--------- BEGIN Test tests/error/error33.nex ---------
+expected '{', no token found
+--------- END Test tests/error/error33.nex ---------
+
+--------- BEGIN Test tests/error/error34.nex ---------
+expected '}', found 'yesho'
+--------- END Test tests/error/error34.nex ---------
+
+--------- BEGIN Test tests/error/error35.nex ---------
+expected '{', found 'yesho'
+--------- END Test tests/error/error35.nex ---------
+
+--------- BEGIN Test tests/error/error36.nex ---------
+expected ')', found '{'
+--------- END Test tests/error/error36.nex ---------
+
+--------- BEGIN Test tests/error/error37.nex ---------
+expected '(', found '{'
+--------- END Test tests/error/error37.nex ---------
+
+--------- BEGIN Test tests/error/error38.nex ---------
+expected '{', found 'raspetchatat'
+--------- END Test tests/error/error38.nex ---------
+
+--------- BEGIN Test tests/error/error39.nex ---------
+expected '{', found 'raspetchatat'
+--------- END Test tests/error/error39.nex ---------
+
+--------- BEGIN Test tests/error/error40.nex ---------
+expected ';', found '!'
+--------- END Test tests/error/error40.nex ---------
+
+--------- BEGIN Test tests/error/error41.nex ---------
+expected 'value', found '!'
+--------- END Test tests/error/error41.nex ---------
+
+--------- BEGIN Test tests/error/error42.nex ---------
+expected '{', found ')'
+--------- END Test tests/error/error42.nex ---------
+
+--------- BEGIN Test tests/error/error43.nex ---------
+expected 'identifier', no token found
+--------- END Test tests/error/error43.nex ---------
+
+--------- BEGIN Test tests/error/error44.nex ---------
+expected 'identifier', found ';'
+--------- END Test tests/error/error44.nex ---------
+
+--------- BEGIN Test tests/error/error45.nex ---------
+expected ';', no token found
+--------- END Test tests/error/error45.nex ---------
+
+--------- BEGIN Test tests/error/error46.nex ---------
+expected ';', found ','
+--------- END Test tests/error/error46.nex ---------
+
+--------- BEGIN Test tests/error/error47.nex ---------
+token 'peremenaya' after logical end of program
+--------- END Test tests/error/error47.nex ---------
+
+--------- BEGIN Test tests/error/error48.nex ---------
+expected ':', found '2'
+--------- END Test tests/error/error48.nex ---------
+
+--------- BEGIN Test tests/error/error49.nex ---------
+expected '(', found 'a'
+--------- END Test tests/error/error49.nex ---------
+
+--------- BEGIN Test tests/error/error50.nex ---------
+expected '(', found 'a'
+--------- END Test tests/error/error50.nex ---------
+
+--------- BEGIN Test tests/error/error51.nex ---------
+expected ')', found ';'
+--------- END Test tests/error/error51.nex ---------
+
+--------- BEGIN Test tests/error/error52.nex ---------
+expected '(', found ';'
+--------- END Test tests/error/error52.nex ---------
+
+--------- BEGIN Test tests/error/error53.nex ---------
+expected '{', found 'raspetchatat'
+--------- END Test tests/error/error53.nex ---------
+
+--------- BEGIN Test tests/eval/eval16.nex ---------
+--------- END Test tests/eval/eval16.nex ---------
+
+--------- BEGIN Test tests/eval/eval18.nex ---------
+--------- END Test tests/eval/eval18.nex ---------
+
+--------- BEGIN Test tests/eval/eval19.nex ---------
+--------- END Test tests/eval/eval19.nex ---------
+
+--------- BEGIN Test tests/eval/eval21.nex ---------
+--------- END Test tests/eval/eval21.nex ---------
+
+--------- BEGIN Test tests/eval/eval22.nex ---------
+--------- END Test tests/eval/eval22.nex ---------
+
+--------- BEGIN Test tests/eval/eval23.nex ---------
+--------- END Test tests/eval/eval23.nex ---------
+
+--------- BEGIN Test tests/eval/eval29.nex ---------
+--------- END Test tests/eval/eval29.nex ---------
+
+--------- BEGIN Test tests/eval/eval37.nex ---------
+--------- END Test tests/eval/eval37.nex ---------
+
+--------- BEGIN Test tests/eval/eval38.nex ---------
+--------- END Test tests/eval/eval38.nex ---------
+
+--------- BEGIN Test tests/eval/eval39.nex ---------
+--------- END Test tests/eval/eval39.nex ---------
+
+--------- BEGIN Test tests/eval/eval40.nex ---------
+--------- END Test tests/eval/eval40.nex ---------
+
+--------- BEGIN Test tests/eval/eval41.nex ---------
+--------- END Test tests/eval/eval41.nex ---------
+
+--------- BEGIN Test tests/eval/eval42.nex ---------
+--------- END Test tests/eval/eval42.nex ---------
+
+--------- BEGIN Test tests/eval/eval43.nex ---------
+--------- END Test tests/eval/eval43.nex ---------
+
+--------- BEGIN Test tests/eval/eval44.nex ---------
+--------- END Test tests/eval/eval44.nex ---------
+
+--------- BEGIN Test tests/eval/eval45.nex ---------
+--------- END Test tests/eval/eval45.nex ---------
+
+--------- BEGIN Test tests/eval/eval46.nex ---------
+--------- END Test tests/eval/eval46.nex ---------
+
+--------- BEGIN Test tests/eval/eval47.nex ---------
+--------- END Test tests/eval/eval47.nex ---------
+$SML not set: trying default of /usr/local/smlnj/bin/sml

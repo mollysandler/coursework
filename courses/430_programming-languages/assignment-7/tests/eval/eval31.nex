@@ -1,0 +1,32 @@
+class Test
+{
+   var a;
+   var b;
+
+   fun init()
+   {
+      this.a = 9;
+      this.b = 32;
+
+      return this;
+   }
+
+   fun go()
+   {
+      print square(this.a);
+      print ":n";
+      print square(this.b);
+      print ":n";
+   }
+}
+
+var obj;
+
+fun square(x)
+{
+   return x * x;
+}
+
+obj = new Test.init();
+obj.go();
+

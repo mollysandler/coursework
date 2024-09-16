@@ -1,0 +1,4 @@
+var f : (int * int -> none);
+
+f = anon (a : int, b : int) : none { print (a + b); print (":n");};
+f(1, 2);

@@ -1,0 +1,7 @@
+fun g(func: (int * int * string -> int)) : none
+{
+}
+
+print "should not get here:n";
+1 / 0;
+g(anon (i: int, b: bool, s: string) : int { return 0; });

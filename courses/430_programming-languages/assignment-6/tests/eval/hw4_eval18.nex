@@ -1,0 +1,8 @@
+var r : int;
+var pi1000 : int;
+var area : int;
+pi1000 = 3141;
+r = 9;
+area = (r * r * pi1000) / 1000;
+print area;
+print ":n";

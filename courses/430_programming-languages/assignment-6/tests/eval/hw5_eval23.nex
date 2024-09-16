@@ -1,0 +1,16 @@
+fun foo() : int
+{
+   return 2;
+}
+
+fun bar() : int
+{
+   var x : int;
+   x = foo() + 1;
+   print (x);
+   print (":n");
+   return foo() * x + foo();
+}
+
+   print (bar());
+   print (":n");

@@ -1,0 +1,18 @@
+fun f() : (-> (-> string))
+{
+   var g : (-> (-> string));
+   g = anon() : (-> string)
+   {
+      var h : (-> string);
+      h = anon() : string
+      {
+         return ("from h:n");
+      };
+
+      return h;
+   };
+
+   return g;
+}
+
+print (f()()());

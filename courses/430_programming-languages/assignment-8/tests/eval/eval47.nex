@@ -1,0 +1,17 @@
+peremenaya i;
+peremenaya j;
+i = 5;
+j = 5;
+deleigh
+{
+deleigh
+{
+raspetchatat j + i;
+raspetchatat ":n";
+j = j - 1;
+}
+poka (j > 0);
+raspetchatat j + i;
+i = i - 1;
+}
+poka (! (i <= 0));

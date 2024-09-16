@@ -1,0 +1,33 @@
+var a : int;
+var b : int;
+var g : int;
+var d : int;
+
+fun f() : none
+{
+   var a : int;
+   var c : int;
+   var d : int;
+   a = b = g; d = 9;
+   print (a);
+   print (":n");
+   print (b);
+   print (":n");
+   print (g);
+   print (":n");
+   print (d);
+   print (":n");
+}
+
+a = b = d = 99;
+g = 4;
+f();
+
+print (a);
+print (":n");
+print (b);
+print (":n");
+print (g);
+print (":n");
+print (d);
+print (":n");

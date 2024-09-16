@@ -1,0 +1,12 @@
+var a : int;
+var b : int;
+var f : (int -> int);
+
+   f = anon (x : int) : int { return x + 1; };
+   a = f(2);
+   b = f(3);
+   print (a);
+   print (":n");
+   print (b);
+   print (":n");
+

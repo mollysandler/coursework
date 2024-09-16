@@ -1,0 +1,13 @@
+
+fun foo() : int
+{
+   return 2;
+}
+
+fun bar() : int
+{
+   return foo() + 1;
+}
+
+   print (bar());
+   print (":n");

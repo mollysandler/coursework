@@ -1,0 +1,9 @@
+var i : int;
+
+fun f(a:int, b:bool) : none {}
+
+print "should not get here:n";
+1 / 0;
+
+f(1, 2);
+

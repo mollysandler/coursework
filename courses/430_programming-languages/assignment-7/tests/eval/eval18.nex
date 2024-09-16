@@ -1,0 +1,29 @@
+class A
+{
+   var x;
+   var y;
+
+   fun f()
+   {
+      this.x = this.x + 8;
+   }
+
+   fun init(x, y)
+   {
+      this.x = x;
+      this.y = y;
+
+      return this;
+   }
+}
+
+var a;
+
+a = new A.init(99, 12);
+
+a.f();
+
+print (a.x);
+print (":n");
+print (a.y);
+print (":n");

@@ -1,0 +1,18 @@
+var i : int; var j : int; var k : int;
+i = 3;
+print i ;
+print ":n";
+j = i + 17;
+print i ;
+print ":n";
+print j ;
+print ":n";
+i = 22;
+j = 4;
+k = i + j;
+print i ;
+print ":n";
+print j ;
+print ":n";
+print k ;
+print ":n";

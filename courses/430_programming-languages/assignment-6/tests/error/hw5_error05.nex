@@ -1,0 +1,7 @@
+  fun f() : none
+  {
+    if (3) { print(1); print(":n"); }
+  }
+print "should not get here:n";
+1 / 0;
+   f();

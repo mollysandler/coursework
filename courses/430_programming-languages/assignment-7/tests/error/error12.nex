@@ -1,0 +1,9 @@
+class A
+{
+   var a;
+
+   fun f() {}
+   fun a() {}
+}
+
+new A;

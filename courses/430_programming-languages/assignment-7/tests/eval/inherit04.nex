@@ -1,0 +1,60 @@
+class Super
+{
+   var x;
+
+   fun superInit()
+   {
+      this.x = 0;
+
+      return this;
+   }
+
+   fun increment()
+   {
+      this.x = this.x + 1;
+   }
+}
+
+class Sub : Super
+{
+   var y;
+
+   fun increment()
+   {
+      this.x = this.x + 1;
+      this.y = this.y + 1;
+   }
+
+   fun init()
+   {
+      this.superInit();
+      this.y = 10;
+
+      return this;
+   }
+}
+
+var sup;
+var sub;
+
+sup = new Super.superInit();
+sub = new Sub.init();
+
+print sup.x;
+print ":n";
+
+print sub.x;
+print ":n";
+
+sup.increment();
+sup.increment();
+sup.increment();
+sub.increment();
+sub.increment();
+
+print sup.x;
+print ":n";
+print sub.x;
+print ":n";
+print sub.y;
+print ":n";

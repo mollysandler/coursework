@@ -1,0 +1,11 @@
+fun f(a:int,a:int):none
+{
+   print (a);
+   print (":n");
+   print (a);
+   print (":n");
+}
+print "should not get here:n";
+1 / 0;
+
+f(1, 2);

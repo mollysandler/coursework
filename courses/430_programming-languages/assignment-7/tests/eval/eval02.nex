@@ -1,0 +1,11 @@
+class A
+{
+   var a;
+}
+
+var o;
+
+o = new A;
+
+print o.a;
+print ":n";

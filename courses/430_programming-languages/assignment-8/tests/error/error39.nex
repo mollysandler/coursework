@@ -1,0 +1,5 @@
+yesle (x > y)
+   raspetchatat x;
+   raspetchatat y;
+yesho
+   {raspetchatat y; {raspetchatat x;}}

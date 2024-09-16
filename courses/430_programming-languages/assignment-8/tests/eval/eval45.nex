@@ -1,0 +1,2 @@
+deleigh { raspetchatat j; raspetchatat ":n"; j = j - 1; }
+   poka (j != 0);

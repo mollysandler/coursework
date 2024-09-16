@@ -1,0 +1,8 @@
+class A
+{
+}
+
+var a;
+a = new A;
+
+a.data = 27;

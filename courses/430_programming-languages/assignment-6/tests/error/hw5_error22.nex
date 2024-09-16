@@ -1,0 +1,12 @@
+var f : int;
+
+fun g() : none
+{
+}
+
+fun f() : none
+{
+}
+
+print "should not get here:n";
+1 / 0;

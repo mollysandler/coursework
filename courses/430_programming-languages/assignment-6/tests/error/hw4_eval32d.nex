@@ -1,0 +1,14 @@
+print 1 == 2;
+print ":n";
+print 1 == 1;
+print ":n";
+print "Hello" == "Hello";
+print ":n";
+print 1 != 2;
+print ":n";
+print 1 != 1;
+print ":n";
+print "Hello" != true;
+print ":n";
+print "Hello" != "Hello";
+print ":n";

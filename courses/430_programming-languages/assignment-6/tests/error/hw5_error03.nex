@@ -1,0 +1,7 @@
+var x : none;
+  fun j(b:bool):none
+  {
+  }
+print "should not get here:n";
+1 / 0;
+   x = j(true > 3);

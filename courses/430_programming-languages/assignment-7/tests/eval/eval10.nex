@@ -1,0 +1,31 @@
+class A
+{
+   var x;
+   var y;
+
+   fun f(that)
+   {
+      return that;
+   }
+}
+
+var a;
+var b;
+
+a = new A;
+
+a.x = 1;
+a.y = 2;
+
+print (a.x);
+print (":n");
+print (a.y);
+print (":n");
+
+b = a.f(a);
+
+print (b.x);
+print (":n");
+print (b.y);
+print (":n");
+

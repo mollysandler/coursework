@@ -1,0 +1,4 @@
+peremenaya a;
+a = 1;
+raspetchatat a;
+raspetchatat ":n";

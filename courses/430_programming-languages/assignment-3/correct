@@ -1,0 +1,520 @@
+[opening tests.sml]
+
+--------- Part1 ---------
+val ae_exp1 = AE_NUM 9 : arith_expression
+val ae_exp2 = AE_PLUS (AE_NUM 3,AE_NUM 4) : arith_expression
+val ae_exp3 =
+  AE_PLUS (AE_PLUS (AE_NUM 9,AE_NUM 4),AE_PLUS (AE_NUM 9,AE_NUM 3))
+  : arith_expression
+val ae_exp4 = AE_MINUS (AE_MINUS (AE_NUM 1,AE_NUM 2),AE_NUM 3)
+  : arith_expression
+val ae_exp5 = AE_MINUS (AE_NUM 1,AE_MINUS (AE_NUM 2,AE_NUM 3))
+  : arith_expression
+val ae_exp6 =
+  AE_PLUS (AE_PLUS (AE_NUM 9,AE_NUM 3),AE_TIMES (AE_NUM 2,AE_NUM 4))
+  : arith_expression
+val ae_exp7 =
+  AE_TIMES (AE_PLUS (AE_NUM 9,AE_NUM 3),AE_PLUS (AE_NUM 2,AE_NUM 4))
+  : arith_expression
+val ae_exp8 =
+  AE_TIMES
+    (AE_MINUS (AE_NUM 6,AE_PLUS (AE_NUM 9,AE_MINUS (AE_NUM 3,AE_NUM 10))),
+     AE_DIVIDE (AE_NUM 4,AE_NUM 2)) : arith_expression
+val ae_exp9 =
+  AE_TIMES
+    (AE_PLUS (AE_NUM 6,AE_DIVIDE (AE_NUM 29,AE_TIMES (AE_NUM 2,AE_NUM 3))),
+     AE_TIMES (AE_NUM 2,AE_NUM 4)) : arith_expression
+ **** arithInfixString ae_exp1;
+val it = "9" : string
+ **** arithInfixString ae_exp2;
+val it = "(3 + 4)" : string
+ **** arithInfixString ae_exp3;
+val it = "((9 + 4) + (9 + 3))" : string
+ **** arithInfixString ae_exp4;
+val it = "((1 - 2) - 3)" : string
+ **** arithInfixString ae_exp5;
+val it = "(1 - (2 - 3))" : string
+ **** arithInfixString ae_exp6;
+val it = "((9 + 3) + (2 * 4))" : string
+ **** arithInfixString ae_exp7;
+val it = "((9 + 3) * (2 + 4))" : string
+ **** arithInfixString ae_exp8;
+val it = "((6 - (9 + (3 - 10))) * (4 / 2))" : string
+ **** arithInfixString ae_exp9;
+val it = "((6 + (29 / (2 * 3))) * (2 * 4))" : string
+ **** arithPrefixString ae_exp1;
+val it = "9" : string
+ **** arithPrefixString ae_exp2;
+val it = "(+ 3 4)" : string
+ **** arithPrefixString ae_exp3;
+val it = "(+ (+ 9 4) (+ 9 3))" : string
+ **** arithPrefixString ae_exp4;
+val it = "(- (- 1 2) 3)" : string
+ **** arithPrefixString ae_exp5;
+val it = "(- 1 (- 2 3))" : string
+ **** arithPrefixString ae_exp6;
+val it = "(+ (+ 9 3) (* 2 4))" : string
+ **** arithPrefixString ae_exp7;
+val it = "(* (+ 9 3) (+ 2 4))" : string
+ **** arithPrefixString ae_exp8;
+val it = "(* (- 6 (+ 9 (- 3 10))) (/ 4 2))" : string
+ **** arithPrefixString ae_exp9;
+val it = "(* (+ 6 (/ 29 (* 2 3))) (* 2 4))" : string
+
+--------- Part2 ---------
+ **** evalArith ae_exp1;
+val it = 9 : int
+ **** evalArith ae_exp2;
+val it = 7 : int
+ **** evalArith ae_exp3;
+val it = 25 : int
+ **** evalArith ae_exp4;
+val it = ~4 : int
+ **** evalArith ae_exp5;
+val it = 2 : int
+ **** evalArith ae_exp6;
+val it = 20 : int
+ **** evalArith ae_exp7;
+val it = 72 : int
+ **** evalArith ae_exp8;
+val it = 8 : int
+ **** evalArith ae_exp9;
+val it = 80 : int
+
+--------- Part3 ---------
+evalMixed (ME_NUM 1);
+val it = INT_VAL 1 : value
+evalMixed (ME_PLUS (ME_NUM 1, ME_NUM 2));
+val it = INT_VAL 3 : value
+evalMixed (ME_PLUS (ME_TIMES (ME_NUM 4, ME_NUM 2), ME_NUM 2));
+val it = INT_VAL 10 : value
+evalMixed (ME_LESSTHAN (ME_PLUS (ME_NUM 4, ME_NUM 9), ME_PLUS (ME_TIMES (ME_NUM 4, ME_NUM 3), ME_NUM 2)));
+val it = BOOL_VAL true : value
+evalMixed (ME_LESSTHAN (ME_LESSTHAN (ME_NUM 4, ME_NUM 9), ME_PLUS (ME_TIMES (ME_NUM 4, ME_NUM 2), ME_NUM 2)));
+val it = ERROR_VAL : value
+evalMixed (ME_PLUS (ME_LESSTHAN (ME_NUM 4, ME_NUM 1), ME_NUM 2));
+val it = ERROR_VAL : value
+
+--------- Part4 ---------
+val ve_exp1 = VE_NUM 2 : var_expression
+val ve_exp2 = VE_ID "a" : var_expression
+val ve_exp3 = VE_PLUS (VE_NUM 2,VE_ID "a") : var_expression
+val ve_exp4 = VE_TIMES (VE_NUM 2,VE_ID "a") : var_expression
+val ve_exp5 =
+  VE_PLUS (VE_TIMES (VE_NUM 2,VE_ID "a"),VE_PLUS (VE_ID "b",VE_ID "x"))
+  : var_expression
+val ve_exp6 =
+  VE_PLUS
+    (VE_PLUS
+       (VE_PLUS
+          (VE_PLUS
+             (VE_PLUS
+                (VE_PLUS (VE_NUM 1,VE_TIMES (VE_NUM 2,VE_NUM 3)),
+                 VE_TIMES (VE_ID "a",VE_NUM 4)),VE_NUM 3),VE_NUM 2),
+        VE_TIMES (VE_NUM 7,VE_NUM 2)),
+     VE_PLUS (VE_PLUS (VE_NUM 9,VE_NUM 4),VE_ID "b")) : var_expression
+val ve_exp7 =
+  VE_PLUS
+    (VE_PLUS
+       (VE_PLUS
+          (VE_PLUS
+             (VE_PLUS
+                (VE_PLUS (VE_NUM 1,VE_TIMES (VE_NUM 2,VE_NUM 3)),
+                 VE_TIMES (VE_NUM 2,VE_NUM 4)),VE_NUM 3),VE_NUM 2),
+        VE_TIMES (VE_NUM 7,VE_NUM 2)),
+     VE_PLUS (VE_PLUS (VE_NUM 9,VE_NUM 4),VE_ID "b")) : var_expression
+val ve_exp8 =
+  VE_PLUS (VE_TIMES (VE_NUM 1,VE_ID "a"),VE_PLUS (VE_NUM 0,VE_NUM 0))
+  : var_expression
+val ve_exp9 =
+  VE_PLUS
+    (VE_PLUS
+       (VE_PLUS
+          (VE_PLUS
+             (VE_PLUS
+                (VE_PLUS (VE_NUM 0,VE_TIMES (VE_NUM 2,VE_NUM 3)),
+                 VE_TIMES (VE_NUM 2,VE_NUM 4)),VE_NUM 3),VE_NUM 2),
+        VE_TIMES (VE_NUM 7,VE_NUM 1)),
+     VE_PLUS (VE_PLUS (VE_NUM 9,VE_NUM 4),VE_ID "b")) : var_expression
+ **** simplifyIdentities ve_exp1;
+val it = VE_NUM 2 : var_expression
+ **** simplifyIdentities ve_exp2;
+val it = VE_ID "a" : var_expression
+ **** simplifyIdentities ve_exp3;
+val it = VE_PLUS (VE_NUM 2,VE_ID "a") : var_expression
+ **** simplifyIdentities ve_exp4;
+val it = VE_TIMES (VE_NUM 2,VE_ID "a") : var_expression
+ **** simplifyIdentities ve_exp5;
+val it = VE_PLUS (VE_TIMES (VE_NUM 2,VE_ID "a"),VE_PLUS (VE_ID "b",VE_ID "x"))
+  : var_expression
+ **** simplifyIdentities ve_exp6;
+val it =
+  VE_PLUS
+    (VE_PLUS
+       (VE_PLUS
+          (VE_PLUS
+             (VE_PLUS
+                (VE_PLUS (VE_NUM 1,VE_TIMES (VE_NUM 2,VE_NUM 3)),
+                 VE_TIMES (VE_ID "a",VE_NUM 4)),VE_NUM 3),VE_NUM 2),
+        VE_TIMES (VE_NUM 7,VE_NUM 2)),
+     VE_PLUS (VE_PLUS (VE_NUM 9,VE_NUM 4),VE_ID "b")) : var_expression
+ **** simplifyIdentities ve_exp7;
+val it =
+  VE_PLUS
+    (VE_PLUS
+       (VE_PLUS
+          (VE_PLUS
+             (VE_PLUS
+                (VE_PLUS (VE_NUM 1,VE_TIMES (VE_NUM 2,VE_NUM 3)),
+                 VE_TIMES (VE_NUM 2,VE_NUM 4)),VE_NUM 3),VE_NUM 2),
+        VE_TIMES (VE_NUM 7,VE_NUM 2)),
+     VE_PLUS (VE_PLUS (VE_NUM 9,VE_NUM 4),VE_ID "b")) : var_expression
+ **** simplifyIdentities ve_exp8;
+val it = VE_ID "a" : var_expression
+ **** simplifyIdentities ve_exp9;
+val it =
+  VE_PLUS
+    (VE_PLUS
+       (VE_PLUS
+          (VE_PLUS
+             (VE_PLUS
+                (VE_TIMES (VE_NUM 2,VE_NUM 3),VE_TIMES (VE_NUM 2,VE_NUM 4)),
+              VE_NUM 3),VE_NUM 2),VE_NUM 7),
+     VE_PLUS (VE_PLUS (VE_NUM 9,VE_NUM 4),VE_ID "b")) : var_expression
+
+--------- Part5 ---------
+ **** foldConstants ve_exp1;
+val it = VE_NUM 2 : var_expression
+ **** foldConstants ve_exp2;
+val it = VE_ID "a" : var_expression
+ **** foldConstants ve_exp3;
+val it = VE_PLUS (VE_NUM 2,VE_ID "a") : var_expression
+ **** foldConstants ve_exp4;
+val it = VE_TIMES (VE_NUM 2,VE_ID "a") : var_expression
+ **** foldConstants ve_exp5;
+val it = VE_PLUS (VE_TIMES (VE_NUM 2,VE_ID "a"),VE_PLUS (VE_ID "b",VE_ID "x"))
+  : var_expression
+ **** foldConstants ve_exp6;
+val it =
+  VE_PLUS
+    (VE_PLUS
+       (VE_PLUS
+          (VE_PLUS (VE_PLUS (VE_NUM 7,VE_TIMES (VE_ID "a",VE_NUM 4)),VE_NUM 3),
+           VE_NUM 2),VE_NUM 14),VE_PLUS (VE_NUM 13,VE_ID "b"))
+  : var_expression
+ **** foldConstants ve_exp7;
+val it = VE_PLUS (VE_NUM 34,VE_PLUS (VE_NUM 13,VE_ID "b")) : var_expression
+ **** foldConstants ve_exp8;
+val it = VE_PLUS (VE_TIMES (VE_NUM 1,VE_ID "a"),VE_NUM 0) : var_expression
+ **** foldConstants ve_exp9;
+val it = VE_PLUS (VE_NUM 26,VE_PLUS (VE_NUM 13,VE_ID "b")) : var_expression
+
+--------- Part6 ---------
+val exp1 = NUM 2 : expression
+val exp2 = ID "a" : expression
+val exp3 = BINARY {lft=NUM 2,opr=OP_PLUS,rht=ID "a"} : expression
+val exp4 = BINARY {lft=NUM 2,opr=OP_TIMES,rht=ID "a"} : expression
+val exp5 =
+  BINARY
+    {lft=BINARY {lft=NUM 2,opr=OP_TIMES,rht=ID "a"},opr=OP_PLUS,
+     rht=BINARY {lft=ID "b",opr=OP_PLUS,rht=ID "x"}} : expression
+val exp6 =
+  FUNCTION {body=BINARY {lft=ID "x",opr=OP_PLUS,rht=NUM 1},parameter="x"}
+  : expression
+val exp7 =
+  CALL
+    {argument=BINARY {lft=ID "x",opr=OP_TIMES,rht=ID "y"},
+     func=FUNCTION
+            {body=BINARY {lft=ID "x",opr=OP_PLUS,rht=NUM 1},parameter="x"}}
+  : expression
+val exp8 =
+  FUNCTION
+    {body=CALL
+            {argument=CALL
+                        {argument=ID "x",
+                         func=FUNCTION
+                                {body=BINARY
+                                        {lft=ID "a",opr=OP_TIMES,rht=ID "y"},
+                                 parameter="z"}},
+             func=FUNCTION
+                    {body=BINARY {lft=ID "x",opr=OP_TIMES,rht=ID "y"},
+                     parameter="y"}},parameter="x"} : expression
+val exp9 =
+  FUNCTION
+    {body=CALL
+            {argument=CALL
+                        {argument=ID "x",
+                         func=FUNCTION
+                                {body=BINARY
+                                        {lft=ID "a",opr=OP_TIMES,rht=ID "y"},
+                                 parameter="z"}},
+             func=FUNCTION
+                    {body=BINARY {lft=ID "x",opr=OP_TIMES,rht=ID "y"},
+                     parameter="y"}},parameter="w"} : expression
+val exp10 = FUNCTION {body=FUNCTION {body=ID "x",parameter="y"},parameter="x"}
+  : expression
+ **** gatherIdentifiers exp1;
+val it = [] : string list
+ **** gatherIdentifiers exp2;
+val it = ["a"] : string list
+ **** gatherIdentifiers exp3;
+val it = ["a"] : string list
+ **** gatherIdentifiers exp4;
+val it = ["a"] : string list
+ **** gatherIdentifiers exp5;
+val it = ["a","b","x"] : string list
+ **** gatherIdentifiers exp6;
+val it = ["x","x"] : string list
+ **** gatherIdentifiers exp7;
+val it = ["x","x","x","y"] : string list
+ **** gatherIdentifiers exp8;
+val it = ["x","y","x","y","z","a","y","x"] : string list
+ **** gatherIdentifiers exp9;
+val it = ["w","y","x","y","z","a","y","x"] : string list
+
+--------- Part7 ---------
+ **** freeVariables exp1;
+val it = [] : string list
+ **** freeVariables exp2;
+val it = ["a"] : string list
+ **** freeVariables exp3;
+val it = ["a"] : string list
+ **** freeVariables exp4;
+val it = ["a"] : string list
+ **** freeVariables exp5;
+val it = ["a","b","x"] : string list
+ **** freeVariables exp6;
+val it = [] : string list
+ **** freeVariables exp7;
+val it = ["x","y"] : string list
+ **** freeVariables exp8;
+val it = ["a","y"] : string list
+ **** freeVariables exp9;
+val it = ["x","a","y","x"] : string list
+
+--------- Part8 ---------
+ **** simpSubst exp1 "a" (NUM 999);
+val it = NUM 2 : expression
+ **** simpSubst exp2 "a" (NUM 999);
+val it = NUM 999 : expression
+ **** simpSubst exp2 "x" (NUM 999);
+val it = ID "a" : expression
+ **** simpSubst exp3 "a" (NUM 999);
+val it = BINARY {lft=NUM 2,opr=OP_PLUS,rht=NUM 999} : expression
+ **** simpSubst exp3 "x" (NUM 999);
+val it = BINARY {lft=NUM 2,opr=OP_PLUS,rht=ID "a"} : expression
+ **** simpSubst exp4 "a" (NUM 999);
+val it = BINARY {lft=NUM 2,opr=OP_TIMES,rht=NUM 999} : expression
+ **** simpSubst exp4 "x" (NUM 999);
+val it = BINARY {lft=NUM 2,opr=OP_TIMES,rht=ID "a"} : expression
+ **** simpSubst exp5 "a" (NUM 999);
+val it =
+  BINARY
+    {lft=BINARY {lft=NUM 2,opr=OP_TIMES,rht=NUM 999},opr=OP_PLUS,
+     rht=BINARY {lft=ID "b",opr=OP_PLUS,rht=ID "x"}} : expression
+ **** simpSubst exp5 "x" (NUM 999);
+val it =
+  BINARY
+    {lft=BINARY {lft=NUM 2,opr=OP_TIMES,rht=ID "a"},opr=OP_PLUS,
+     rht=BINARY {lft=ID "b",opr=OP_PLUS,rht=NUM 999}} : expression
+ **** simpSubst exp6 "a" (NUM 999);
+val it =
+  FUNCTION {body=BINARY {lft=ID "x",opr=OP_PLUS,rht=NUM 1},parameter="x"}
+  : expression
+ **** simpSubst exp6 "x" (NUM 999);
+val it =
+  FUNCTION {body=BINARY {lft=NUM 999,opr=OP_PLUS,rht=NUM 1},parameter="x"}
+  : expression
+ **** simpSubst exp7 "x" (NUM 999);
+val it =
+  CALL
+    {argument=BINARY {lft=NUM 999,opr=OP_TIMES,rht=ID "y"},
+     func=FUNCTION
+            {body=BINARY {lft=NUM 999,opr=OP_PLUS,rht=NUM 1},parameter="x"}}
+  : expression
+ **** simpSubst exp8 "a" (NUM 999);
+val it =
+  FUNCTION
+    {body=CALL
+            {argument=CALL
+                        {argument=ID "x",
+                         func=FUNCTION
+                                {body=BINARY
+                                        {lft=NUM 999,opr=OP_TIMES,rht=ID "y"},
+                                 parameter="z"}},
+             func=FUNCTION
+                    {body=BINARY {lft=ID "x",opr=OP_TIMES,rht=ID "y"},
+                     parameter="y"}},parameter="x"} : expression
+ **** simpSubst exp8 "y" (NUM 999);
+val it =
+  FUNCTION
+    {body=CALL
+            {argument=CALL
+                        {argument=ID "x",
+                         func=FUNCTION
+                                {body=BINARY
+                                        {lft=ID "a",opr=OP_TIMES,rht=NUM 999},
+                                 parameter="z"}},
+             func=FUNCTION
+                    {body=BINARY {lft=ID "x",opr=OP_TIMES,rht=NUM 999},
+                     parameter="y"}},parameter="x"} : expression
+ **** simpSubst exp9 "a" (NUM 999);
+val it =
+  FUNCTION
+    {body=CALL
+            {argument=CALL
+                        {argument=ID "x",
+                         func=FUNCTION
+                                {body=BINARY
+                                        {lft=NUM 999,opr=OP_TIMES,rht=ID "y"},
+                                 parameter="z"}},
+             func=FUNCTION
+                    {body=BINARY {lft=ID "x",opr=OP_TIMES,rht=ID "y"},
+                     parameter="y"}},parameter="w"} : expression
+ **** simpSubst exp9 "y" (NUM 999);
+val it =
+  FUNCTION
+    {body=CALL
+            {argument=CALL
+                        {argument=ID "x",
+                         func=FUNCTION
+                                {body=BINARY
+                                        {lft=ID "a",opr=OP_TIMES,rht=NUM 999},
+                                 parameter="z"}},
+             func=FUNCTION
+                    {body=BINARY {lft=ID "x",opr=OP_TIMES,rht=NUM 999},
+                     parameter="y"}},parameter="w"} : expression
+
+--------- Part9 ---------
+ **** betterSubst exp1 "a" (NUM 999);
+val it = NUM 2 : expression
+ **** betterSubst exp2 "a" (NUM 999);
+val it = NUM 999 : expression
+ **** betterSubst exp2 "x" (NUM 999);
+val it = ID "a" : expression
+ **** betterSubst exp3 "a" (NUM 999);
+val it = BINARY {lft=NUM 2,opr=OP_PLUS,rht=NUM 999} : expression
+ **** betterSubst exp3 "x" (NUM 999);
+val it = BINARY {lft=NUM 2,opr=OP_PLUS,rht=ID "a"} : expression
+ **** betterSubst exp4 "a" (NUM 999);
+val it = BINARY {lft=NUM 2,opr=OP_TIMES,rht=NUM 999} : expression
+ **** betterSubst exp4 "x" (NUM 999);
+val it = BINARY {lft=NUM 2,opr=OP_TIMES,rht=ID "a"} : expression
+ **** betterSubst exp5 "a" (NUM 999);
+val it =
+  BINARY
+    {lft=BINARY {lft=NUM 2,opr=OP_TIMES,rht=NUM 999},opr=OP_PLUS,
+     rht=BINARY {lft=ID "b",opr=OP_PLUS,rht=ID "x"}} : expression
+ **** betterSubst exp5 "x" (NUM 999);
+val it =
+  BINARY
+    {lft=BINARY {lft=NUM 2,opr=OP_TIMES,rht=ID "a"},opr=OP_PLUS,
+     rht=BINARY {lft=ID "b",opr=OP_PLUS,rht=NUM 999}} : expression
+ **** betterSubst exp6 "a" (NUM 999);
+val it =
+  FUNCTION {body=BINARY {lft=ID "x",opr=OP_PLUS,rht=NUM 1},parameter="x"}
+  : expression
+ **** betterSubst exp6 "x" (NUM 999);
+val it =
+  FUNCTION {body=BINARY {lft=ID "x",opr=OP_PLUS,rht=NUM 1},parameter="x"}
+  : expression
+ **** betterSubst exp7 "x" (NUM 999);
+val it =
+  CALL
+    {argument=BINARY {lft=NUM 999,opr=OP_TIMES,rht=ID "y"},
+     func=FUNCTION
+            {body=BINARY {lft=ID "x",opr=OP_PLUS,rht=NUM 1},parameter="x"}}
+  : expression
+ **** betterSubst exp8 "a" (NUM 999);
+val it =
+  FUNCTION
+    {body=CALL
+            {argument=CALL
+                        {argument=ID "x",
+                         func=FUNCTION
+                                {body=BINARY
+                                        {lft=NUM 999,opr=OP_TIMES,rht=ID "y"},
+                                 parameter="z"}},
+             func=FUNCTION
+                    {body=BINARY {lft=ID "x",opr=OP_TIMES,rht=ID "y"},
+                     parameter="y"}},parameter="x"} : expression
+ **** betterSubst exp8 "y" (NUM 999);
+val it =
+  FUNCTION
+    {body=CALL
+            {argument=CALL
+                        {argument=ID "x",
+                         func=FUNCTION
+                                {body=BINARY
+                                        {lft=ID "a",opr=OP_TIMES,rht=NUM 999},
+                                 parameter="z"}},
+             func=FUNCTION
+                    {body=BINARY {lft=ID "x",opr=OP_TIMES,rht=ID "y"},
+                     parameter="y"}},parameter="x"} : expression
+ **** betterSubst exp9 "a" (NUM 999);
+val it =
+  FUNCTION
+    {body=CALL
+            {argument=CALL
+                        {argument=ID "x",
+                         func=FUNCTION
+                                {body=BINARY
+                                        {lft=NUM 999,opr=OP_TIMES,rht=ID "y"},
+                                 parameter="z"}},
+             func=FUNCTION
+                    {body=BINARY {lft=ID "x",opr=OP_TIMES,rht=ID "y"},
+                     parameter="y"}},parameter="w"} : expression
+ **** betterSubst exp9 "y" (NUM 999);
+val it =
+  FUNCTION
+    {body=CALL
+            {argument=CALL
+                        {argument=ID "x",
+                         func=FUNCTION
+                                {body=BINARY
+                                        {lft=ID "a",opr=OP_TIMES,rht=NUM 999},
+                                 parameter="z"}},
+             func=FUNCTION
+                    {body=BINARY {lft=ID "x",opr=OP_TIMES,rht=ID "y"},
+                     parameter="y"}},parameter="w"} : expression
+
+--------- Part10 ---------
+val other = BINARY {lft=ID "x",opr=OP_TIMES,rht=ID "y"} : expression
+val another = BINARY {lft=ID "z",opr=OP_TIMES,rht=ID "y"} : expression
+val last = BINARY {lft=ID "q",opr=OP_TIMES,rht=ID "y"} : expression
+ **** willCapture exp1 "a" other;
+val it = false : bool
+ **** willCapture exp2 "a" other;
+val it = false : bool
+ **** willCapture exp3 "a" other;
+val it = false : bool
+ **** willCapture exp4 "a" other;
+val it = false : bool
+ **** willCapture exp5 "x" other;
+val it = false : bool
+ **** willCapture exp6 "a" other;
+val it = false : bool
+ **** willCapture exp6 "x" other;
+val it = false : bool
+ **** willCapture exp7 "x" other;
+val it = false : bool
+ **** willCapture exp8 "a" other;
+val it = true : bool
+ **** willCapture exp8 "y" other;
+val it = true : bool
+ **** willCapture exp9 "y" other;
+val it = false : bool
+ **** willCapture exp9 "x" other;
+val it = true : bool
+ **** willCapture exp8 "y" another;
+val it = true : bool
+ **** willCapture exp9 "x" another;
+val it = true : bool
+ **** willCapture exp8 "a" another;
+val it = true : bool
+ **** willCapture exp9 "a" another;
+val it = true : bool
+ **** willCapture exp9 "a" last;
+val it = false : bool
+ **** willCapture exp10 "x" other;
+val it = false : bool

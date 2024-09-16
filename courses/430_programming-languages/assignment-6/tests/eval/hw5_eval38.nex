@@ -1,0 +1,48 @@
+var odds : (-> int);
+var odd : (int -> bool);
+
+fun f(x : int) : (-> int)
+{
+   var tmp : int;
+   var counter : (-> int);
+   counter = anon() : int
+   {
+      tmp = x;
+      x = x + 1;
+      return tmp;
+   };
+   return counter;
+}
+
+fun filter(filt : (int -> bool), gen : (-> int)) : (-> int)
+{
+   return anon () : int
+   {
+      var tmp : int;
+      tmp = gen();
+      while (!filt(tmp))
+      {
+         tmp = gen();
+      }
+      return tmp;
+   };
+}
+
+   odd = anon (x : int) : bool { return (x % 2) == 1; };
+   odds = filter(odd, f(1));
+   print (odds());
+   print (":n");
+   print (odds());
+   print (":n");
+   print (odds());
+   print (":n");
+   print (odds());
+   print (":n");
+   print (odds());
+   print (":n");
+   print (odds());
+   print (":n");
+   print (odds());
+   print (":n");
+   print (odds());
+   print (":n");

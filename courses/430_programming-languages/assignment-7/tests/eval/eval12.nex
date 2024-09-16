@@ -1,0 +1,28 @@
+class Node
+{
+   var value;
+   var next;
+}
+
+var head;
+var tmp;
+var i;
+
+i = 0;
+
+head = new Node;
+tmp = head;
+
+while (i < 5)
+{
+   tmp.value = i;   
+   tmp.next = new Node;
+   tmp = tmp.next;
+
+   i = i + 1;
+}
+
+tmp.value = i;
+
+print head.next.next.next.next.next.value;
+print ":n";

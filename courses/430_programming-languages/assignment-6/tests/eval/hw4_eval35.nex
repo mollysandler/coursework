@@ -1,0 +1,11 @@
+var i : int;
+var j : int;
+var k : bool;
+   i = 7;
+   print i;
+   print ":n";
+   j = 10;
+   print i + j;
+   print ":n";
+   k = true;
+   if (k) { print j; print ":n"; }

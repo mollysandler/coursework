@@ -1,0 +1,15 @@
+peremenaya i;
+peremenaya j;
+i = 5;
+j = 5;
+poka (! (i <= 0))
+{
+poka (j > 0)
+{
+raspetchatat j + i;
+raspetchatat ":n";
+j = j - 1;
+}
+raspetchatat j + i;
+i = i - 1;
+}

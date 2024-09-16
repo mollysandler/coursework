@@ -1,0 +1,11 @@
+class A
+{
+   var a;
+
+   fun f()
+   {
+      return anon() { print this.a; print ":n"; };
+   }
+}
+
+new A.f()();

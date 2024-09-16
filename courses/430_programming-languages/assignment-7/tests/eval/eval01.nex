@@ -1,0 +1,6 @@
+class A
+{
+}
+
+print new A;
+print ":n";

@@ -1,0 +1,3 @@
+var f : (-> none);
+f = anon () : none { print (1); print (":n"); };
+f();

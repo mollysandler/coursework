@@ -1,0 +1,86 @@
+class Top
+{
+   var data;
+
+   fun go()
+   {
+      print "top:n";
+   }
+}
+
+class Sub1 : Top
+{
+   var value;
+
+   fun go()
+   {
+      print "sub1 -- ";
+      print this.value;
+      print ":n";
+   }
+
+   fun init(value)
+   {
+      this.value = value;
+
+      return this;
+   }
+}
+
+class Sub2 : Top
+{
+   fun other()
+   {
+      print "sub2 -- ";
+      print this.data;
+      print ":n";
+   }
+
+   fun init(data)
+   {
+      this.data = data;
+
+      return this;
+   }
+}
+
+class SubSub : Sub1
+{
+   fun other()
+   {
+      print "subsub -- ";
+      print this.data;
+      print ":n";
+   }
+
+   fun init(data)
+   {
+      this.data = data;
+
+      return this;
+   }
+}
+
+var top;
+var sub10;
+var sub11;
+var sub20;
+var sub21;
+var subsub;
+
+top = new Top;
+sub10 = new Sub1.init("ten");
+sub11 = new Sub1.init("eleven");
+sub20 = new Sub2.init(20);
+sub21 = new Sub2.init(21);
+subsub = new SubSub.init("bottom");
+
+top.go();
+sub10.go();
+sub11.go();
+sub20.go();
+sub21.go();
+subsub.go();
+sub20.other();
+sub21.other();
+subsub.other();

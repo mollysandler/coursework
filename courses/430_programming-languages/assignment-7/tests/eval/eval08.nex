@@ -1,0 +1,9 @@
+class A
+{
+   fun f()
+   {
+      print "in f:n";
+   }
+}
+
+new A.f();

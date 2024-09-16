@@ -1,0 +1,8 @@
+class A
+{
+   var a;
+   var b;
+   var a;
+}
+
+new A;

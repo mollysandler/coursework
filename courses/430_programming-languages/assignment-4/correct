@@ -1,0 +1,607 @@
+
+--------- BEGIN Test tests/eval/eval01.sml ---------
+3
+--------- END Test tests/eval/eval01.sml ---------
+
+--------- BEGIN Test tests/eval/eval02.sml ---------
+true
+--------- END Test tests/eval/eval02.sml ---------
+
+--------- BEGIN Test tests/eval/eval03.sml ---------
+false
+--------- END Test tests/eval/eval03.sml ---------
+
+--------- BEGIN Test tests/eval/eval04.sml ---------
+none
+--------- END Test tests/eval/eval04.sml ---------
+
+--------- BEGIN Test tests/eval/eval05.sml ---------
+Hello, world.
+--------- END Test tests/eval/eval05.sml ---------
+
+--------- BEGIN Test tests/eval/eval06.sml ---------
+2
+Hello.
+none
+true
+false
+4
+--------- END Test tests/eval/eval06.sml ---------
+
+--------- BEGIN Test tests/eval/eval07.sml ---------
+2
+4
+Hello.
+true
+none
+false
+--------- END Test tests/eval/eval07.sml ---------
+
+--------- BEGIN Test tests/eval/eval08.sml ---------
+false
+true
+-2
+--------- END Test tests/eval/eval08.sml ---------
+
+--------- BEGIN Test tests/eval/eval09.sml ---------
+12
+2
+1
+60
+--------- END Test tests/eval/eval09.sml ---------
+
+--------- BEGIN Test tests/eval/eval10.sml ---------
+5
+-1
+6
+-4
+Hello, World.
+--------- END Test tests/eval/eval10.sml ---------
+
+--------- BEGIN Test tests/eval/eval11.sml ---------
+none
+--------- END Test tests/eval/eval11.sml ---------
+
+--------- BEGIN Test tests/eval/eval12.sml ---------
+2
+4
+Hello.
+true
+none
+false
+17
+--------- END Test tests/eval/eval12.sml ---------
+
+--------- BEGIN Test tests/eval/eval13.sml ---------
+1
+--------- END Test tests/eval/eval13.sml ---------
+
+--------- BEGIN Test tests/eval/eval14.sml ---------
+1
+1
+2
+9
+1
+--------- END Test tests/eval/eval14.sml ---------
+
+--------- BEGIN Test tests/eval/eval15.sml ---------
+3
+-5
+-4
+11
+-5
+7
+-5
+77
+52
+--------- END Test tests/eval/eval15.sml ---------
+
+--------- BEGIN Test tests/eval/eval16.sml ---------
+false
+true
+true
+false
+true
+--------- END Test tests/eval/eval16.sml ---------
+
+--------- BEGIN Test tests/eval/eval17.sml ---------
+5
+15
+40
+--------- END Test tests/eval/eval17.sml ---------
+
+--------- BEGIN Test tests/eval/eval18.sml ---------
+254
+--------- END Test tests/eval/eval18.sml ---------
+
+--------- BEGIN Test tests/eval/eval19.sml ---------
+2
+3
+2
+none
+2
+none
+2
+3
+--------- END Test tests/eval/eval19.sml ---------
+
+--------- BEGIN Test tests/eval/eval20.sml ---------
+17 10
+true false
+--------- END Test tests/eval/eval20.sml ---------
+
+--------- BEGIN Test tests/eval/eval21.sml ---------
+false
+true
+false
+true
+true
+true
+false
+true
+false
+true
+--------- END Test tests/eval/eval21.sml ---------
+
+--------- BEGIN Test tests/eval/eval23.sml ---------
+3
+-5
+-4
+11
+-5
+7
+-5
+77
+--------- END Test tests/eval/eval23.sml ---------
+
+--------- BEGIN Test tests/eval/eval24.sml ---------
+false
+true
+false
+false
+true
+false
+true
+true
+false
+true
+--------- END Test tests/eval/eval24.sml ---------
+
+--------- BEGIN Test tests/eval/eval25.sml ---------
+false
+false
+false
+true
+true
+true
+false
+true
+--------- END Test tests/eval/eval25.sml ---------
+
+--------- BEGIN Test tests/eval/eval26.sml ---------
+3
+none
+none
+3
+20
+none
+22
+4
+26
+--------- END Test tests/eval/eval26.sml ---------
+
+--------- BEGIN Test tests/eval/eval27.sml ---------
+44
+22
+44
+--------- END Test tests/eval/eval27.sml ---------
+
+--------- BEGIN Test tests/eval/eval28.sml ---------
+1 2 3 4 5 6 7 8 9 10
+5
+15
+40
+-1
+55
+--------- END Test tests/eval/eval28.sml ---------
+
+--------- BEGIN Test tests/eval/eval29.sml ---------
+100
+99
+98
+97
+96
+95
+94
+93
+92
+91
+90
+89
+88
+87
+86
+85
+84
+83
+82
+81
+80
+79
+78
+77
+76
+75
+74
+73
+72
+71
+70
+69
+68
+67
+66
+65
+64
+63
+62
+61
+60
+59
+58
+57
+56
+55
+54
+53
+52
+51
+50
+49
+48
+47
+46
+45
+44
+43
+42
+41
+40
+39
+38
+37
+36
+35
+34
+33
+32
+31
+30
+29
+28
+27
+26
+25
+24
+23
+22
+21
+20
+19
+18
+17
+16
+15
+14
+13
+12
+11
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+--------- END Test tests/eval/eval29.sml ---------
+
+--------- BEGIN Test tests/eval/eval30.sml ---------
+120
+--------- END Test tests/eval/eval30.sml ---------
+
+--------- BEGIN Test tests/eval/eval31.sml ---------
+31
+--------- END Test tests/eval/eval31.sml ---------
+
+--------- BEGIN Test tests/eval/eval32.sml ---------
+false
+true
+false
+false
+true
+true
+false
+true
+true
+false
+--------- END Test tests/eval/eval32.sml ---------
+
+--------- BEGIN Test tests/eval/eval33.sml ---------
+-15
+-14
+-13
+-12
+-11
+-10
+-9
+-8
+-7
+-6
+-5
+-4
+-3
+-2
+-1
+-14
+-13
+-12
+-11
+-10
+-9
+-8
+-7
+-6
+-5
+-4
+-3
+-2
+-1
+-13
+-12
+-11
+-10
+-9
+-8
+-7
+-6
+-5
+-4
+-3
+-2
+-1
+-12
+-11
+-10
+-9
+-8
+-7
+-6
+-5
+-4
+-3
+-2
+-1
+-11
+-10
+-9
+-8
+-7
+-6
+-5
+-4
+-3
+-2
+-1
+-9
+-8
+-7
+-6
+-5
+-4
+-3
+-2
+-1
+-8
+-7
+-6
+-5
+-4
+-3
+-2
+-1
+-7
+-6
+-5
+-4
+-3
+-2
+-1
+-6
+-5
+-4
+-3
+-2
+-1
+5
+-1112
+-4
+-3
+-2
+-1
+-3
+-2
+-1
+-2
+-1
+-1
+10
+--------- END Test tests/eval/eval33.sml ---------
+
+--------- BEGIN Test tests/eval/eval34.sml ---------
+--------- END Test tests/eval/eval34.sml ---------
+
+--------- BEGIN Test tests/eval/eval35.sml ---------
+none
+none
+7
+none
+17
+10
+--------- END Test tests/eval/eval35.sml ---------
+
+--------- BEGIN Test tests/eval/eval36.sml ---------
+false
+true
+false
+false
+--------- END Test tests/eval/eval36.sml ---------
+
+--------- BEGIN Test tests/eval/eval37.sml ---------
+true
+true
+false
+true
+--------- END Test tests/eval/eval37.sml ---------
+
+--------- BEGIN Test tests/eval/eval38.sml ---------
+1
+2
+2
+1
+3
+3
+--------- END Test tests/eval/eval38.sml ---------
+
+--------- BEGIN Test tests/eval/eval39.sml ---------
+14
+16
+12
+8
+6
+1
+0
+--------- END Test tests/eval/eval39.sml ---------
+
+--------- BEGIN Test tests/eval/eval40.sml ---------
+10
+Hello
+99
+--------- END Test tests/eval/eval40.sml ---------
+
+--------- BEGIN Test tests/error/error01.sml ---------
+operator '+' requires number * number or string * string, found number * boolean
+--------- END Test tests/error/error01.sml ---------
+
+--------- BEGIN Test tests/error/error02.sml ---------
+operator '+' requires number * number or string * string, found boolean * string
+--------- END Test tests/error/error02.sml ---------
+
+--------- BEGIN Test tests/error/error03.sml ---------
+operator '*' requires number * number, found none * number
+--------- END Test tests/error/error03.sml ---------
+
+--------- BEGIN Test tests/error/error04.sml ---------
+operator '-' requires number * number, found none * none
+--------- END Test tests/error/error04.sml ---------
+
+--------- BEGIN Test tests/error/error05.sml ---------
+operator '/' requires number * number, found number * boolean
+--------- END Test tests/error/error05.sml ---------
+
+--------- BEGIN Test tests/error/error06.sml ---------
+operator '%' requires number * number, found number * none
+--------- END Test tests/error/error06.sml ---------
+
+--------- BEGIN Test tests/error/error07.sml ---------
+operator '>' requires number * number, found boolean * boolean
+--------- END Test tests/error/error07.sml ---------
+
+--------- BEGIN Test tests/error/error08.sml ---------
+operator '<' requires number * number, found none * number
+--------- END Test tests/error/error08.sml ---------
+
+--------- BEGIN Test tests/error/error09.sml ---------
+operator '<=' requires number * number, found number * string
+--------- END Test tests/error/error09.sml ---------
+
+--------- BEGIN Test tests/error/error10.sml ---------
+operator '>=' requires number * number, found string * none
+--------- END Test tests/error/error10.sml ---------
+
+--------- BEGIN Test tests/error/error11.sml ---------
+operator '&&' requires boolean * boolean, found boolean * number
+--------- END Test tests/error/error11.sml ---------
+
+--------- BEGIN Test tests/error/error12.sml ---------
+operator '||' requires boolean, found none
+--------- END Test tests/error/error12.sml ---------
+
+--------- BEGIN Test tests/error/error13.sml ---------
+unary operator '!' requires boolean, found none
+--------- END Test tests/error/error13.sml ---------
+
+--------- BEGIN Test tests/error/error14.sml ---------
+unary operator '-' requires number, found boolean
+--------- END Test tests/error/error14.sml ---------
+
+--------- BEGIN Test tests/error/error15.sml ---------
+operator '*' requires number * number, found number * none
+--------- END Test tests/error/error15.sml ---------
+
+--------- BEGIN Test tests/error/error16.sml ---------
+boolean guard required for 'cond' expression, found none
+--------- END Test tests/error/error16.sml ---------
+
+--------- BEGIN Test tests/error/error17.sml ---------
+operator '+' requires number * number or string * string, found string * number
+--------- END Test tests/error/error17.sml ---------
+
+--------- BEGIN Test tests/error/error18.sml ---------
+operator '-' requires number * number, found string * string
+--------- END Test tests/error/error18.sml ---------
+
+--------- BEGIN Test tests/error/error19.sml ---------
+operator '+' requires number * number or string * string, found number * boolean
+--------- END Test tests/error/error19.sml ---------
+
+--------- BEGIN Test tests/error/error20.sml ---------
+operator '-' requires number * number, found none * none
+--------- END Test tests/error/error20.sml ---------
+
+--------- BEGIN Test tests/error/error21.sml ---------
+boolean guard required for 'while' statement, found none
+4
+3
+2
+1
+0
+-1
+-2
+--------- END Test tests/error/error21.sml ---------
+
+--------- BEGIN Test tests/error/error22.sml ---------
+operator '>' requires number * number, found none * number
+--------- END Test tests/error/error22.sml ---------
+
+--------- BEGIN Test tests/error/error23.sml ---------
+operator '>=' requires number * number, found number * none
+--------- END Test tests/error/error23.sml ---------
+
+--------- BEGIN Test tests/error/error24.sml ---------
+boolean guard required for 'while' statement, found number
+--------- END Test tests/error/error24.sml ---------
+
+--------- BEGIN Test tests/error/error25.sml ---------
+boolean guard required for 'if' statement, found number
+--------- END Test tests/error/error25.sml ---------
+
+--------- BEGIN Test tests/error/error26.sml ---------
+variable 'a' not found
+--------- END Test tests/error/error26.sml ---------
+
+--------- BEGIN Test tests/error/error27.sml ---------
+variable 'a' was previously declared
+--------- END Test tests/error/error27.sml ---------

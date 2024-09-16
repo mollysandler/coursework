@@ -1,0 +1,12 @@
+fun f(i: int, b: bool, s: string) : int
+{
+   return 0;
+}
+
+fun g(func: (int * int * string -> int)) : none
+{
+}
+
+print "should not get here:n";
+1 / 0;
+g(f);

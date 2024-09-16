@@ -1,0 +1,6 @@
+var i:int; var j:none; var b:bool;
+print "should not get here:n";
+1 / 0;
+j = none;
+i = 3;
+b = j > i;

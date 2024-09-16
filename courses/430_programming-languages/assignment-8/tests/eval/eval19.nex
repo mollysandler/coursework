@@ -1,0 +1,6 @@
+raspetchatat 4 + (2 > 3 ? 0 : 3) * 2;
+raspetchatat ":n";
+raspetchatat 4 > 2 || 1 < 0 ? "Hello" : 99;
+raspetchatat ":n";
+raspetchatat !(4 > 2 || 1 < 0) ? "Hello" : 99;
+raspetchatat ":n";

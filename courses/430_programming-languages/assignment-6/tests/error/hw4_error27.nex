@@ -1,0 +1,8 @@
+var a : int;
+var b : int;
+var c : int;
+var a : int;
+print "should not get here:n";
+1 / 0;
+
+print a;

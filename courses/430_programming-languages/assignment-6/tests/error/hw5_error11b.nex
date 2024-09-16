@@ -1,0 +1,20 @@
+var f : bool;
+fun g(x : bool) : bool
+{
+   if (x)
+   {
+      return anon (x : int) : int { return x + 1; };
+   }
+   else
+   {
+      return true;
+   }
+
+   return false;
+}
+print "should not get here:n";
+1 / 0;
+   f = g(false);
+   print (f);
+   print (":n");
+   f(2);

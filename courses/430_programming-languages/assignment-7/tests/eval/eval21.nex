@@ -1,0 +1,36 @@
+class Point
+{
+   var x;
+   var y;
+
+   fun init(x, y)
+   {
+      this.x = x;
+      this.y = y;
+
+      return this;
+   }
+}
+
+class Rectangle
+{
+   var topLeft;
+   var botRight;
+
+   fun area()
+   {
+      return (this.botRight.x - this.topLeft.x) *
+         (this.topLeft.y - this.botRight.y);
+   }
+
+   fun init(topLeft, botRight)
+   {
+      this.topLeft = topLeft;
+      this.botRight = botRight;
+
+      return this;
+   }
+}
+
+print new Rectangle.init(new Point.init(0, 5), new Point.init(5,1));
+print ":n";

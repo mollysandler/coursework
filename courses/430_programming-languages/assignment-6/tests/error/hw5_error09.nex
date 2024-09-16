@@ -1,0 +1,7 @@
+fun f() : int
+{
+   return 1 + true;
+}
+print "should not get here:n";
+1 / 0;
+   print f();

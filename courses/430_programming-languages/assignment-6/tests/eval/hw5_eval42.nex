@@ -1,0 +1,36 @@
+var a : string;
+
+fun f() : none
+{
+   var a : string;
+   var h : (-> none);
+   var g : (-> none);
+   a = "in f:n";
+
+   h = anon() : none
+   {
+      var a : string;
+      a = "in h:n";
+      g();
+
+      print (a);
+   };
+
+   g = anon() : none
+   {
+      var a : string;
+      a = "in g:n";
+
+      print (a);
+   };
+
+   h();
+
+   g();
+
+   print (a);
+}
+
+a = "global:n";
+f();
+print (a);

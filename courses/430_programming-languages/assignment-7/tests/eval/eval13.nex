@@ -1,0 +1,54 @@
+class F
+{
+   fun f()
+   {
+      print "in function f:n";
+   }
+}
+
+class E
+{
+   var f;
+}
+
+class D
+{
+   var e;
+}
+
+class C
+{
+   var d;
+}
+
+class B
+{
+   var c;
+}
+
+class A
+{
+   var b;
+}
+
+var a;
+var b;
+var c;
+var d;
+var e;
+var f;
+
+a = new A;
+b = new B;
+c = new C;
+d = new D;
+e = new E;
+f = new F;
+
+e.f = f;
+d.e = e;
+c.d = d;
+b.c = c;
+a.b = b;
+
+a.b.c.d.e.f.f();

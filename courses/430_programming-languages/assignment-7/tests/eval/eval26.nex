@@ -1,0 +1,28 @@
+class A
+{
+   var data;
+
+   fun init(data)
+   {
+      this.data = data;
+      return this;
+   }
+
+   fun go()
+   {
+      print "in A's method -- ";
+      print this.data;
+      print ":n";
+   }
+}
+
+var f;
+
+fun getMethod()
+{
+   return new A.init(2).go;
+}
+
+f = getMethod();
+
+f();

@@ -1,0 +1,18 @@
+class Super
+{
+   var x;
+   var y;
+}
+
+class Sub : Super
+{
+}
+
+var o;
+
+o = new Sub;
+
+print o.x;
+print ":n";
+print o.y;
+print ":n";

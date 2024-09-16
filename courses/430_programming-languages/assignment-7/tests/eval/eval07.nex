@@ -1,0 +1,13 @@
+class A
+{
+   fun f()
+   {
+      print "in f:n";
+   }
+}
+
+var a;
+
+a = new A;
+
+a.f();

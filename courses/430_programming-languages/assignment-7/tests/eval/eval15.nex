@@ -1,0 +1,62 @@
+class F
+{
+   fun f()
+   {
+      print "in function f:n";
+   }
+}
+
+class E
+{
+   var f;
+
+   fun init()
+   {
+      this.f = new F;
+      return this;
+   }
+}
+
+class D
+{
+   var e;
+
+   fun init()
+   {
+      this.e = new E.init();
+      return this;
+   }
+}
+
+class C
+{
+   fun c()
+   {
+      print "in function c:n";
+      return new D.init();
+   }
+}
+
+class B
+{
+   var c;
+
+   fun init()
+   {
+      this.c = new C;
+      return this;
+   }
+}
+
+class A
+{
+   var b;
+
+   fun init()
+   {
+      this.b = new B.init();
+      return this;
+   }
+}
+
+new A.init().b.c.c().e.f.f();

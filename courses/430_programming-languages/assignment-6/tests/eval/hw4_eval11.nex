@@ -1,0 +1,4 @@
+var id : none;
+id = none;
+print id;
+print ":n";

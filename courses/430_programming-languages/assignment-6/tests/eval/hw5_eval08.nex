@@ -1,0 +1,21 @@
+  var i : int;
+  fun f(n : int) : none
+  {
+    var i : int;
+    i = 2;
+    print (i);
+    print (":n");
+  }
+  fun g(n : int) : none
+  {
+    i = n;
+    print (i);
+    print (":n");
+  }
+i = 3;
+f(2);
+print (i);
+print (":n");
+g(7);
+print (i);
+print (":n");

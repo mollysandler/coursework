@@ -1,0 +1,4 @@
+var f : int;
+print "should not get here:n";
+1 / 0;
+   f = anon() : none { } + 1;

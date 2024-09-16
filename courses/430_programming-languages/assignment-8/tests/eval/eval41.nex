@@ -1,0 +1,1 @@
+   poka (j != 0) { raspetchatat j; raspetchatat ":n"; j = j - 1; }

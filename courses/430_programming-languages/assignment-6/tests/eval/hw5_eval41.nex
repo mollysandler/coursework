@@ -1,0 +1,97 @@
+var f1 : (bool -> (bool -> (bool -> (-> (-> none)))));
+var f2 : (bool -> (bool -> (-> (-> none))));
+var f3 : (bool -> (-> (-> none)));
+var f4 : (-> (-> none));
+var f5 : (-> none);
+
+fun f() : (bool -> (bool -> (bool -> (-> (-> none)))))
+{
+   var a : int;
+   a = 1;
+   return anon(x : bool) : (bool -> (bool -> (-> (-> none))))
+   {
+      var b : int;
+      b = 2;
+      if (x)
+      {
+         a = a + 1;
+      }
+      else
+      {
+         print (a);
+         print (":n");
+      }
+      return anon(y : bool) : (bool -> (-> (-> none)))
+      {
+         var c : int;
+         c = 3;
+         if (y)
+         {
+            b = b + 1;
+         }
+         else
+         {
+            print (b);
+            print (":n");
+         }
+         return anon(z : bool) : (-> (-> none))
+         {
+            var b : int;
+            b = 100;
+            if (z)
+            {
+               c = c + 1;
+            }
+            else
+            {
+               print (c);
+               print (":n");
+            }
+            return anon() : (-> none)
+            {
+               a = a + 1;
+               b = b + 1;
+               c = c + 1;
+               return anon() : none
+               {
+                  print (a);
+                  print (":n");
+                  print (b);
+                  print (":n");
+                  print (c);
+                  print (":n");
+               };
+            };
+         };
+      };
+   };
+}
+
+   f1 = f();
+   f2 = f1(false);
+   f3 = f2(false);
+   f4 = f3(false);
+   f5 = f4();
+
+   f5();
+   f4();
+   f4();
+   f4();
+   f5();
+   f1(false);
+   f2(false);
+   f3(false);
+   f5();
+
+   f1(true);
+   f2(true);
+   f3(true);
+
+   f1(true);
+   f2(true);
+   f3(true);
+
+   f1(false);
+   f2(false);
+   f3(false);
+   f5();

@@ -1,0 +1,11 @@
+var i:int;
+var j:int;
+  fun f() : none
+  {
+    i = 3;
+    j = 4;
+    i = j > false;
+  }
+print "should not get here:n";
+1 / 0;
+   i = f();

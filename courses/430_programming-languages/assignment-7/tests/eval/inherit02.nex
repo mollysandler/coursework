@@ -1,0 +1,35 @@
+class Super
+{
+   var x;
+
+   fun init()
+   {
+      this.x = 0;
+
+      return this;
+   }
+
+   fun increment()
+   {
+      this.x = this.x + 1;
+   }
+}
+
+class Sub : Super
+{
+}
+
+var o;
+
+o = new Sub.init();
+
+print o.x;
+print ":n";
+
+o.increment();
+o.increment();
+o.increment();
+o.increment();
+
+print o.x;
+print ":n";

@@ -1,0 +1,12 @@
+If you want to run the tests directly in the sml interpreter, then you will
+need to load the files in the following order:
+
+evaluator.sml
+test_scaffold.sml
+tests.sml
+
+
+Within the tests directory are a collection of files for each test case.
+The .nex file is the test is a somewhat traditional syntax (for readability).
+The .sml file contains the AST representation of the test case.
+The .correct file is the expected output for that test case.

@@ -1,0 +1,15 @@
+var a : none;
+var b : int;
+var c : int;
+fun f(g : (-> none)) : none
+{
+   var b : int;
+   var c : int;
+   b = 100;
+   c = 200;
+   a = g();
+}
+
+   b = 1;
+   c = 2;
+   a = f(anon () : none { print (b); print (":n");  print (c); print (":n");});
