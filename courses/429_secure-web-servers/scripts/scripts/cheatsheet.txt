@@ -1,0 +1,16 @@
+Start SSH-Agent to automatically input key password
+eval $(ssh-agent)
+
+Send files from to local to remote
+rsync -avz -e 'ssh -i ./429_key' ./backup/html/submit.php root@team8.csc429.io:/var/www/html
+
+Get backup of web server file
+rsync -av --delete -e "ssh -i ./429_key" root@team8.csc429.io:/var/www/html ./backup-4-30-24
+
+Access the remote host
+ssh -i 429_key root@146.190.138.63
+
+hash a file
+md5sum file.txt
+
+Root Password: SR#GfNBpY#LoxErxDp4
